@@ -1,0 +1,5 @@
+﻿    <h2 style="color: #41A85F;">Notification</h2>
+    <p>Dear Team,</p>
+    <p>[Robot] - The Stop button has been pressed.</p>
+    <p>Best regards,</p>
+  	<img src='cid:EquifaxLogo' alt='Imagen'>

@@ -1,0 +1,6 @@
+﻿    <h2 style="color: #41A85F;">Notification</h2>
+    <p>Dear Team,</p>
+    <p>Dispatcher execution ended properly. The bot can be activated.</p>
+	<p>New Batch Created: [BatchId].</p>
+    <p>Best regards,</p>
+  	<img src='cid:EquifaxLogo' alt='Imagen'>

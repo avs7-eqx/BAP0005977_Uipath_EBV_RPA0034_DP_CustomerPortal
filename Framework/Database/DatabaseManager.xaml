@@ -1,0 +1,230 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DatabaseManager" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_QueryName" Type="InArgument(x:String)" />
+    <x:Property Name="in_ParamArray" Type="InArgument(s:String[])" />
+    <x:Property Name="out_dt_QueryResults" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_IsApi" Type="InArgument(x:Boolean)" />
+    <x:Property Name="in_ConnectionString" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1244,2502</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>DatabaseManager_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Keeps the SQL queries to be executed againts the database with help of the Database Query sequence. &#xA;&#xA;Args&#xA;in_QueryName {in}  String // The Key to identify the SQL query to Execute&#xA;in_ParamArray {in}  String[] // An Array of string params to be inserted in the base query obtained from the query Name&#xA;in_IsApi {in} Boolean // Flag to determine if API call is used&#xA;in_ConnectionStringDB {in} String // DB Connection String&#xA;out_dt_QueryResults {out} Datatable  // Results from the execution of the query." DisplayName="DatabaseManager" sap:VirtualizedContainerService.HintSize="530,2437" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Query" />
+      <Variable x:TypeArguments="x:Int32" Name="QueryType" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the start of the process" DisplayName="Log Start" sap:VirtualizedContainerService.HintSize="468,172" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Database Manager: START.&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <If Condition="[in_ParamArray is Nothing]" DisplayName="in_ParamArray is nothing" sap:VirtualizedContainerService.HintSize="468,344" sap2010:WorkflowViewState.IdRef="If_3">
+      <If.Then>
+        <Assign DisplayName="Assign - in_ParamArray" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign.To>
+            <OutArgument x:TypeArguments="s:String[]">[in_ParamArray]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="s:String[]">[new String(){}]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Returns the query string based on the queryName argument.&#xA;&#xA;Arguments:&#xA;in_QueryName - Name to identify the query to retrieve&#xA;&#xA;out_QueryType - Type of query &#xA;1. Select  2. Insert/Delete/Update&#xA;&#xA;out_QueryResult - String that contains the resulting query" Code="Select Case in_QueryName&#xA;&#x9;Case &quot;bmProcessGetAcroProName&quot;&#xA;&#x9;&#x9;out_QueryResult = &quot;SELECT PRO_ACRONYM, PRO_NAME FROM RPA_CRCCS.RPA_CRCCS.bm_process WHERE pro_id = {0}&quot;&#xA;&#x9;&#x9;out_QueryType = 1&#xA;&#x9;Case &quot;bmBatchGetBAT_ID&quot;&#xA;&#x9;&#x9;out_QueryResult = &quot;SELECT BAT_ID FROM RPA_CRCCS.RPA_CRCCS.bm_batch WHERE BAT_NAME = '{0}'&quot;&#xA;&#x9;&#x9;out_QueryType = 1&#xA;&#x9;Case &quot;verifyCompleteAddQueue&quot;&#xA;&#x9;&#x9;out_QueryResult = &quot;SELECT COUNT(*) AS TOTAL FROM RPA_CRCCS.RPA_CRCCS.BM_INPUT WHERE INP_STATUS &lt;&gt; 'NEW' AND BAT_ID = {0}&quot;&#xA;&#x9;&#x9;out_QueryType = 1&#xA;&#x9;Case &quot;selectDateFromDb&quot;&#xA;&#x9;&#x9;out_QueryResult =&quot;SELECT CURRENT_TIMESTAMP AS CurrentDate&quot;&#xA;&#x9;&#x9;out_QueryType = 1&#xA;&#x9;Case &quot;selectVerifyBeingProcessByBot&quot;&#xA;&#x9;&#x9;out_QueryResult = &quot;SELECT INP_ID FROM RPA_CRCCS.RPA_CRCCS.BM_INPUT WHERE INP_ID  = '{0}' AND BAT_ID = {1} AND INP_BOT_ID = '{2}'&quot;&#xA;&#x9;&#x9;out_QueryType = 1&#xA;&#x9;Case &quot;bmInputUpdateFailed&quot;&#xA;&#x9;&#x9;out_QueryResult =&quot;UPDATE RPA_CRCCS.RPA_CRCCS.BM_INPUT SET INP_STATUS = '{0}' WHERE BAT_ID = {1} AND INP_ID = {2}&quot;&#xA;&#x9;&#x9;out_QueryType = 2&#xA;&#x9;Case &quot;bmInputUpdateCompleted&quot; &#xA;&#x9;&#x9;out_QueryResult =&quot;UPDATE RPA_CRCCS.RPA_CRCCS.BM_INPUT SET INP_STATUS = 'COMPLETED' WHERE BAT_ID = {0} AND INP_ID = {1}&quot;&#xA;&#x9;&#x9;out_QueryType = 2&#xA;&#x9;Case &quot;selectNextInputsQueryQueueMain&quot;&#xA;&#x9;&#x9;out_QueryResult =&quot;SELECT INP_ID,INP_FIELD_1, INP_FIELD_2 , INP_FIELD_3, INP_FIELD_4, INP_FIELD_5, INP_FIELD_6 FROM RPA_CRCCS.RPA_CRCCS.BM_INPUT WHERE INP_BOT_ID = '{0}' AND BAT_ID = {1} AND INP_ID = {2}&quot;&#xA;&#x9;&#x9;out_QueryType = 1&#xA;&#x9;Case &quot;updateCurrentTransaction&quot;&#xA;&#x9;&#x9;out_QueryResult = &quot;UPDATE RPA_CRCCS.RPA_CRCCS.BM_INPUT SET INP_STATUS = 'BEING PROCESSED' , INP_BOT_ID = '{0}' WHERE BAT_ID={1} AND INP_ID = {2}&quot;&#xA;&#x9;&#x9;out_QueryType = 2&#xA;&#x9;Case &quot;updatePendingItems&quot;&#xA;&#x9;&#x9;out_QueryResult = &quot;UPDATE RPA_CRCCS.RPA_CRCCS.BM_INPUT SET INP_STATUS = 'UPLOADING' FROM (SELECT TOP {0} INP_ID FROM RPA_CRCCS.RPA_CRCCS.BM_INPUT WHERE BAT_ID ={1} AND INP_STATUS = 'NEW UPLOADER') AS BItemporal WHERE RPA_CRCCS.RPA_CRCCS.BM_INPUT.INP_ID = BItemporal.INP_ID&quot;&#xA;&#x9;&#x9;out_QueryType = 2&#xA;&#x9;Case &quot;getUploadingBatchInformation&quot;&#xA;&#x9;&#x9;out_QueryResult = &quot;SELECT * FROM RPA_CRCCS.RPA_CRCCS.BM_INPUT WHERE BAT_ID = {0} AND INP_STATUS = 'UPLOADING'&quot;&#xA;&#x9;&#x9;out_QueryType = 1&#xA;&#x9;Case &quot;updateBatchToNew&quot;&#xA;&#x9;&#x9;out_QueryResult= &quot;UPDATE RPA_CRCCS.RPA_CRCCS.BM_INPUT SET INP_STATUS = 'NEW' WHERE BAT_ID ={0} AND INP_STATUS = 'UPLOADING'&quot;&#xA;&#x9;&#x9;out_QueryType = 2&#xA;&#x9;Case &quot;bmBatchInsertBAT&quot;&#xA;&#x9;&#x9;out_QueryResult=&quot;INSERT INTO [RPA_CRCCS].[RPA_CRCCS].[BM_BATCH] (BAT_NAME,BAT_ENVIRONMENT,PRO_ID) VALUES ('{0}','{1}',{2})&quot;&#xA;&#x9;&#x9;out_QueryType = 2&#x9;&#x9;&#xA;&#x9;Case &quot;bmInputGetBmInputTable&quot;&#xA;&#x9;&#x9;out_QueryResult = &quot;SELECT TOP(0) * FROM RPA_CRCCS.RPA_CRCCS.BM_INPUT&quot;&#xA;&#x9;&#x9;out_QueryType = 1&#xA;'============================================================================================================================&#xA;'This is going to be the custom section queries - Add them using cases&#xA;' Case [Name to Identify the query]&#xA;' &#x9;&#x9;out_QueryResult= &quot;[Insert Query Here]&quot;&#xA;'&#x9;&#x9;out_QueryType = [1/2]&#xA;End Select" DisplayName="Querie Select Cases" sap:VirtualizedContainerService.HintSize="468,342" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_QueryName">[in_QueryName]</InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_QueryResult">[Query]</OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="out_QueryType">[QueryType]</OutArgument>
+      </ui:InvokeCode.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeCode>
+    <If sap2010:Annotation.AnnotationText="Checks if the query was found, otherwise throws an exception." Condition="[String.IsNullOrEmpty(Query)]" DisplayName="If - Query Not Found" sap:VirtualizedContainerService.HintSize="468,345" sap2010:WorkflowViewState.IdRef="If_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Throw sap2010:Annotation.AnnotationText="Throws AE, query name arguemtn is invalid." DisplayName="Throw - Invalid Query Name" Exception="[new ApplicationException(String.Format(&quot;Database Manager: Invalid Query Name provided - {0}, no query result was found.&quot;, in_QueryName))]" sap:VirtualizedContainerService.HintSize="334,121" sap2010:WorkflowViewState.IdRef="Throw_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Throw>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+    <If sap2010:Annotation.AnnotationText="Checks if the params arguments contains items. " Condition="[in_ParamArray.Count &lt;&gt; 0]" DisplayName="If - Param Array is not empty" sap:VirtualizedContainerService.HintSize="468,405" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Assign sap2010:Annotation.AnnotationText="Format the query to add the parameters pass in the argument" DisplayName="Format Query Params" sap:VirtualizedContainerService.HintSize="434,112" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[Query]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[String.Format(Query,in_ParamArray)]</InArgument>
+          </Assign.Value>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Assign>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Calls Database Main to execute the query against DB." DisplayName="Invoke Database Main" sap:VirtualizedContainerService.HintSize="468,144" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\Database\DatabaseMain.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:Int32" x:Key="in_QueryType">[QueryType]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_QueryString">[Query]</InArgument>
+        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_Results">[out_dt_QueryResults]</OutArgument>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsAPI">[in_IsApi]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ConnectionStringDB">[in_ConnectionString]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the end of the process" DisplayName="Log End" sap:VirtualizedContainerService.HintSize="468,172" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Obtain BM Input: End.&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>

@@ -1,0 +1,8 @@
+﻿    <h2 style="color: #d9534f;">Error Notification</h2>
+    <p>Dear Team,</p>
+    <p>We encountered an error during the dispatcher process. Please find the details below:</p>
+    <p><strong>Robot:</strong> [Robot]</p>
+    <p><strong>Error Message:</strong> [Error_Message]</p>
+    <p><strong>Error happened in step:</strong> [CurrentStep]</p>
+  	<p>Best regards,</p>
+  	<img src='cid:EquifaxLogo' alt='Imagen'>

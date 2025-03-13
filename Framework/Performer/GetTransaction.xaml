@@ -1,0 +1,313 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Obtain_BM_Input" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="clr-namespace:RPA_COE_Analytics_Core;assembly=RPA COE Analytics Core" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_QueueName" Type="InArgument(x:String)" />
+    <x:Property Name="out_CurrentTransaction" Type="OutArgument(ui:QueueItem)" />
+    <x:Property Name="out_dt_Results" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_IsApi" Type="InArgument(x:Boolean)" />
+    <x:Property Name="in_ConnectionString" Type="InArgument(x:String)" />
+    <x:Property Name="out_InputId" Type="OutArgument(x:String)" />
+    <x:Property Name="out_BatchId" Type="OutArgument(x:String)" />
+    <x:Property Name="in_AnalyticsUseCaseName" Type="InArgument(x:String)" />
+    <x:Property Name="in_AnalyticsUseCaseNameReal" Type="InArgument(x:String)" />
+    <x:Property Name="out_startDateTime" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1068,3420</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Obtain_BM_Input_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>RPA_COE_Analytics_Core</x:String>
+      <x:String>Google.Cloud.PubSub.V1</x:String>
+      <x:String>Google.Protobuf</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>RPA COE Analytics Core</AssemblyReference>
+      <AssemblyReference>Google.Cloud.PubSub.V1</AssemblyReference>
+      <AssemblyReference>Google.Protobuf</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="This sequence get a transaction from the orchestrator and then pull data from the db based on the batch id and input id.&#xA;&#xA;Args&#xA;- in_QueueName {in} String // Name of the queue for the project.&#xA;- in_IsApi {in} Boolean // Flag to determine if API call is used.&#xA;- in_ConnectionStringDB {in} String // DB Connection String.&#xA;- in_AnalyticsUseCaseName {in} - String // Analytic Project Name to use.&#xA;- in_AnalyticsUseCaseNameReal {in} String // Project Name to use.&#xA;- out_CurrentTransaction {out} Queue Item // Next Transaction to be processed from queue.&#xA;- out_dt_Results {out} Datatable // Data from database (BM_INPUT Table) .&#xA;- out_InputId {out} String // Input Id from Queue Item.&#xA;- out_BatchId {out} String // Batch Id from Queue Item." DisplayName="GetTransaction" sap:VirtualizedContainerService.HintSize="617,3355" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the start of the process" DisplayName="Log Start" sap:VirtualizedContainerService.HintSize="555,172" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Get Transaction: START&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <ui:GetQueueItem ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Gets an item from the queue" DisplayName="Get BM Item" sap:VirtualizedContainerService.HintSize="555,174" sap2010:WorkflowViewState.IdRef="GetQueueItem_1" QueueType="[in_QueueName]" TransactionItem="[out_CurrentTransaction]">
+      <ui:GetQueueItem.Reference>
+        <InArgument x:TypeArguments="x:String" />
+      </ui:GetQueueItem.Reference>
+      <ui:GetQueueItem.TimeoutMS>
+        <InArgument x:TypeArguments="x:Int32" />
+      </ui:GetQueueItem.TimeoutMS>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:GetQueueItem>
+    <If sap2010:Annotation.AnnotationText="Check is a queue item was retrieved" Condition="[IsNothing(out_CurrentTransaction)]" DisplayName="If - Current Item is nothing" sap:VirtualizedContainerService.HintSize="555,2399" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <ui:MultipleAssign sap2010:Annotation.AnnotationText="Assigns an empty Datatable to the results argument." DisplayName="No Transaction" sap:VirtualizedContainerService.HintSize="479,209" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+          <ui:MultipleAssign.AssignOperations>
+            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="sd:DataTable">[out_dt_Results]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="sd:DataTable">[new DataTable]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">
+                    <VisualBasicReference x:TypeArguments="x:String" ExpressionText="out_InputId" sap2010:WorkflowViewState.IdRef="VisualBasicReference`1_1" />
+                  </OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[String.Empty]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[out_BatchId]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[String.Empty]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+            </scg:List>
+          </ui:MultipleAssign.AssignOperations>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:MultipleAssign>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Start Transaction" sap:VirtualizedContainerService.HintSize="521,1977" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="BotId" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <r:Analytics_Start_Process_Transaction DisplayName="RPA Start Analytics  Process Transaction" sap:VirtualizedContainerService.HintSize="479,243" sap2010:WorkflowViewState.IdRef="Analytics_Start_Process_Transaction_1" in_CurrentTransaction="[out_CurrentTransaction]" in_CustomData="[new Dictionary( Of String, String )]" in_UseCaseName="[in_AnalyticsUseCaseName]" in_UseCaseNameReal="[in_AnalyticsUseCaseNameReal]" />
+          <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the change to Being Process for transaction" DisplayName="Log Message Status Being Process" sap:VirtualizedContainerService.HintSize="479,172" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Get Transaction: SET INPUT STATUS TO BEING PROCESS&quot;]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:LogMessage>
+          <ui:MultipleAssign sap2010:Annotation.AnnotationText="Sets the needed variables for the query execution" DisplayName="Multiple Assign - Param Array" sap:VirtualizedContainerService.HintSize="479,209" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+            <ui:MultipleAssign.AssignOperations>
+              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[out_InputId]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[out_CurrentTransaction.SpecificContent("Input ID").ToString]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[out_BatchId]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[out_CurrentTransaction.SpecificContent("Batch ID").ToString]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[BotId]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[System.Net.Dns.GetHostByName(System.Net.Dns.GetHostName.ToString).AddressList(0).ToString.ToLower + "/" + System.Net.Dns.GetHostName.ToString.ToUpper + "/" + Environment.UserName.ToString.ToLower]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+              </scg:List>
+            </ui:MultipleAssign.AssignOperations>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:MultipleAssign>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Changes the transaction status to Being proccess in database. " DisplayName="Set Transaction to Being Proccess" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\Database\DatabaseManager.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_QueryName">updateCurrentTransaction</InArgument>
+              <InArgument x:TypeArguments="s:String[]" x:Key="in_ParamArray">[{BotId,out_BatchId, out_InputId}]</InArgument>
+              <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_QueryResults">[out_dt_Results]</OutArgument>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsApi">[in_IsApi]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_ConnectionString">[in_ConnectionString]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeWorkflowFile>
+          <ui:LogMessage DisplayName="Log Message Get Start Date" sap:VirtualizedContainerService.HintSize="479,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Get Transaction: GET START DATE&quot;]" />
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This section will get a date value from the database using the CURRENT_DATE function" DisplayName="Get Start Date From DB" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Framework\Database\DatabaseManager.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_QueryName">selectDateFromDb</InArgument>
+              <InArgument x:TypeArguments="s:String[]" x:Key="in_ParamArray" />
+              <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_QueryResults">[out_dt_Results]</OutArgument>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsApi">[in_IsApi]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_ConnectionString">[in_ConnectionString]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeWorkflowFile>
+          <Assign DisplayName="Assign - startDateTime" sap:VirtualizedContainerService.HintSize="479,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[out_startDateTime]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[out_dt_Results.Rows(0)(0).ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the change to Being Process for transaction" DisplayName="Log Message Get Records in Being Process" sap:VirtualizedContainerService.HintSize="479,172" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Obtain BM Input: GET RECORDS IN BEING PROCESS&quot;]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:LogMessage>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Gets the transaction from input Id" DisplayName="Get the records result from DB" sap:VirtualizedContainerService.HintSize="479,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\Database\DatabaseManager.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_QueryName">selectNextInputsQueryQueueMain</InArgument>
+              <InArgument x:TypeArguments="s:String[]" x:Key="in_ParamArray">[{BotId,out_BatchId,out_InputId}]</InArgument>
+              <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_QueryResults">[out_dt_Results]</OutArgument>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsApi">[in_IsApi]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_ConnectionString">[in_ConnectionString]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the end of the process" DisplayName="Log End" sap:VirtualizedContainerService.HintSize="555,172" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Get Transaction: END&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>

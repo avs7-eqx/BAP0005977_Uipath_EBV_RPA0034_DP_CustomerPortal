@@ -1,0 +1,5 @@
+﻿    <h2 style="color: #41A85F;">Notification</h2>
+    <p>Dear Team,</p>
+    <p>Performer execution ended properly. [Robot] has no more transactions to process.</p>
+    <p>Best regards,</p>
+  	<img src='cid:EquifaxLogo' alt='Imagen'>

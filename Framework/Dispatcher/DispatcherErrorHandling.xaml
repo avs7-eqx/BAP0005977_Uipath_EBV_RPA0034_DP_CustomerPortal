@@ -1,0 +1,187 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DispatcherErrorHandling" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:l="clr-namespace:Logging_Standards_Library_Core;assembly=Logging Standards Library Core" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_ErrorHandling" Type="InArgument(scg:Dictionary(x:String, x:String))" />
+    <x:Property Name="in_CurrentTransaction" Type="InArgument(ui:QueueItem)" />
+    <x:Property Name="in_DispatcherConfiguration" Type="InArgument(scg:Dictionary(x:String, x:String))" />
+    <x:Property Name="in_DefaultConfiguration" Type="InArgument(scg:Dictionary(x:String, x:String))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1708,2908</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>DispatcherErrorHandling_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>Logging_Standards_Library_Core</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>Logging Standards Library Core</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="This activity monitors for any business exceptions and handles application exceptions by sending an email notification. It updates the transaction status in the orchestrator to either 'failed' or 'business,' depending on the scenario. Additionally, it logs an event in the BM_LOG table for auditing and tracking purposes.&#xA;&#xA;Args&#xA;- in_ErrorHandling {in}  Dictionary Of String, String ) // Dictionary with the error values.&#xA;- in_DispatcherConfiguration {in}  Dictionary Of String, String ) // Dictionary with the project values.&#xA;- in_DefaultConfiguration {in} Dictionary (Of Sting, String) //  Dictionary with default values.&#xA;- in_CurrentTransaction {in} String // Orchestrator queue name." DisplayName="DispatcherErrorHandling" sap:VirtualizedContainerService.HintSize="572,2843" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Start" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Dispatcher Error Handling: START&quot;]" />
+    <If Condition="[in_ErrorHandling(&quot;errorType&quot;).ToString.Trim.Equals(&quot;UiPath.Core.BusinessRuleException&quot;)]" DisplayName="Business Rule Exception?" sap:VirtualizedContainerService.HintSize="510,2208" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="BusinessRuleException" sap:VirtualizedContainerService.HintSize="476,1013" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="BizMessage" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadTextFile File="{x:Null}" Content="[BizMessage]" DisplayName="Read stopForcedBodyMessage File" FileName="Framework\Email\Templates\stopForcedBodyMessage.txt" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+          <Assign DisplayName="Assign - BizMessage" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[BizMessage]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[BizMessage.Replace("[Robot]", in_DefaultConfiguration("logLastModByVar").ToString.Trim ).Replace("[Error_Message]", in_ErrorHandling("errorMessage").ToString.Trim).Replace("[XAML]", in_ErrorHandling("currentStep").ToString.Trim).Replace("[Process]", "dispatcher")]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EmailSender.xaml - Stop Forced - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\Email\EmailSender.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_EmailSubject">[in_DispatcherConfiguration("bizSubjectMessage").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_EmailBody">[BizMessage]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Attachment">[String.Empty]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SmtpServer">[in_DefaultConfiguration("emailServer").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:Int32" x:Key="in_SmtpPort">[CInt(in_DefaultConfiguration("emailPort").ToString.Trim)]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SenderName">[in_DefaultConfiguration("errorEmailFromName").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SenderEmail">[in_DefaultConfiguration("errorEmailFrom").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_RecipientEmail">[in_DefaultConfiguration("errorEmailTo").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_BccEmail">[in_DefaultConfiguration("errorEmailBcc").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_CcEmail">[in_DefaultConfiguration("errorEmailCc").ToString.Trim]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <l:Business_Exception_Log DisplayName="RPA - Business Exception Log" sap:VirtualizedContainerService.HintSize="434,498" sap2010:WorkflowViewState.IdRef="Business_Exception_Log_1" in_BatId="[CInt(in_DispatcherConfiguration(&quot;batId&quot;).ToString.Trim)]" in_BotType="UPLOADER_BOT" in_ConnectionString="[in_DefaultConfiguration(&quot;connectionStringDB&quot;).ToString.Trim]" in_LogDetailMessage="[in_ErrorHandling(&quot;errorMessage&quot;).ToString.Trim]" in_LogFields="[new Dictionary(Of String, String)]" in_ProId="[CInt(in_DefaultConfiguration(&quot;processId&quot;).ToString.Trim)]" in_ReferenceId="[in_CurrentTransaction.Reference]" in_StartDate="[in_DispatcherConfiguration(&quot;startDateTime&quot;).ToString.Trim]" in_Transaction="[in_CurrentTransaction]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </l:Business_Exception_Log>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="AppException" sap:VirtualizedContainerService.HintSize="476,1013" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="ExceptionMessage" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadTextFile File="{x:Null}" Content="[ExceptionMessage]" DisplayName="Read bodyErrorMessageWithoutScreenshot File" FileName="Framework\Email\Templates\bodyErrorMessageDispatcher.txt" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+          <Assign DisplayName="Assign - ExceptionMessage" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[ExceptionMessage]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[ExceptionMessage.Replace("[Robot]", in_DefaultConfiguration("logLastModByVar").ToString.Trim ).Replace("[Error_Message]", in_ErrorHandling("errorMessage").ToString.Trim).Replace("[XAML]", in_ErrorHandling("currentStep").ToString.Trim)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EmailSender.xaml - App  Exception - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\Email\EmailSender.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_EmailSubject">[in_DispatcherConfiguration("errorSubjectMessage").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_EmailBody">[ExceptionMessage]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Attachment">[String.Empty]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SmtpServer">[in_DefaultConfiguration("emailServer").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:Int32" x:Key="in_SmtpPort">[CInt(in_DefaultConfiguration("emailPort").ToString.Trim)]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SenderName">[in_DefaultConfiguration("errorEmailFromName").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SenderEmail">[in_DefaultConfiguration("errorEmailFrom").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_RecipientEmail">[in_DefaultConfiguration("errorEmailTo").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_BccEmail">[in_DefaultConfiguration("errorEmailBcc").ToString.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_CcEmail">[in_DefaultConfiguration("errorEmailCc").ToString.Trim]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <l:Application_Exception_Log DisplayName="RPA Application Exception Log" sap:VirtualizedContainerService.HintSize="434,498" sap2010:WorkflowViewState.IdRef="Application_Exception_Log_1" in_BatId="[CInt(in_DispatcherConfiguration(&quot;batId&quot;).ToString.Trim)]" in_BotType="UPLOADER_BOT" in_ConnectionString="[in_DefaultConfiguration(&quot;connectionStringDB&quot;).ToString.Trim]" in_LogDetailMessage="[in_ErrorHandling(&quot;errorMessage&quot;).ToString.Trim]" in_LogFields="[new Dictionary(Of String, String)]" in_ProId="[CInt(in_DefaultConfiguration(&quot;processId&quot;))]" in_ReferenceId="[in_CurrentTransaction.Reference]" in_StartDate="[in_DispatcherConfiguration(&quot;startDateTime&quot;).ToString.Trim]" in_Transaction="[in_CurrentTransaction]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </l:Application_Exception_Log>
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:LogMessage DisplayName="End" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Dispatcher Error Handling: END&quot;]" />
+  </Sequence>
+</Activity>

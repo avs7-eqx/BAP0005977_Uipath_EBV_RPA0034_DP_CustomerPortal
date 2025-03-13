@@ -1,0 +1,215 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="BulkInsertDB" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_BatchId" Type="InArgument(x:String)" />
+    <x:Property Name="in_connectionStringDB" Type="InArgument(x:String)" />
+    <x:Property Name="in_BotId" Type="InArgument(x:String)" />
+    <x:Property Name="in_dt_InputData" Type="InArgument(sd:DataTable)" />
+  </x:Members>
+  <this:BulkInsertDB.in_dt_InputData>
+    <InArgument x:TypeArguments="sd:DataTable" />
+  </this:BulkInsertDB.in_dt_InputData>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1028,2565</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Dispatcher_Bulk_Insert_DB_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="50">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="This sequence is going to insert multiples rows in the database using a bulk activity.&#xA;&#xA;Args&#xA;- in_BatchId {in} String // Batch id to use in the bulk insert.&#xA;- in_connectionStringDB {in} String // Db Connection string to use.&#xA;- in_BotId {in} String // Bot id.&#xA;- in_dt_InputData {in} Datatable // Input data to use." DisplayName="BulkInsertDB" sap:VirtualizedContainerService.HintSize="662,2500" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(x:String)" sap2010:Annotation.AnnotationText="List variable initialization to store any error log while adding rows to the datatable used to bulk insert into the DB" Default="[New List(of String)]" Name="ErrorLog" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_BMStructure" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Start" sap:VirtualizedContainerService.HintSize="600,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Bulk Insert DB: START&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework\Database\DatabaseManager.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="600,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\Database\DatabaseManager.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_QueryName">bmInputGetBmInputTable</InArgument>
+        <InArgument x:TypeArguments="s:String[]" x:Key="in_ParamArray" />
+        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_QueryResults">[dt_BMStructure]</OutArgument>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsApi">False</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ConnectionString">[in_connectionStringDB]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <Sequence DisplayName="Bulk Insert Logic" sap:VirtualizedContainerService.HintSize="600,1725" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Receives an input Datatable and another datatable with the strcucture of the table BM input, then iterates for each row in the input dt adding the needed column values to the structure dt to perform a bulk insert afterwards. " Code="Try&#xD;&#xA;&#xD;&#xA;Dim row As DataRow&#xD;&#xA;&#xD;&#xA;For Each InputRow As DataRow In Input.Rows&#xD;&#xA;row=DataTable.NewRow&#xD;&#xA;' BAT_ID created from the DB&#xD;&#xA;row(&quot;BAT_ID&quot;)=BAT_ID&#xD;&#xA;&#xD;&#xA;' Custom values, modify/add values  as needed&#xD;&#xA;row(&quot;INP_FIELD_1&quot;)=InputRow(Input.Columns(0))&#xD;&#xA;row(&quot;INP_FIELD_2&quot;)=InputRow(Input.Columns(1))&#xD;&#xA;row(&quot;INP_FIELD_3&quot;)=InputRow(Input.Columns(2))&#xD;&#xA;&#xD;&#xA;' No need to modify values below&#xD;&#xA;row(&quot;INP_LOAD_DATE&quot;)=DateAndTime.Now&#xD;&#xA;row(&quot;INP_STATUS&quot;)=&quot;NEW UPLOADER&quot;&#xD;&#xA;row(&quot;INP_BOT_ID&quot;)=BOT_ID&#xD;&#xA;&#xD;&#xA;DataTable.Rows.Add(row)&#xD;&#xA;Next&#xD;&#xA;&#xD;&#xA;Catch Err As Exception&#xD;&#xA;&#x9;ErrorLog.Add(Err.Message)&#xD;&#xA;End Try" DisplayName="Add Row to dt_BMStructure" sap:VirtualizedContainerService.HintSize="538,252" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+        <ui:InvokeCode.Arguments>
+          <InOutArgument x:TypeArguments="sd:DataTable" x:Key="DataTable">[dt_BMStructure]</InOutArgument>
+          <InArgument x:TypeArguments="sd:DataTable" x:Key="Input">[in_dt_InputData]</InArgument>
+          <InOutArgument x:TypeArguments="scg:List(x:String)" x:Key="ErrorLog">[ErrorLog]</InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="BAT_ID">[in_BatchId]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="BOT_ID">[in_BotId]</InArgument>
+        </ui:InvokeCode.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeCode>
+      <If Condition="[ErrorLog.Count &gt; 0]" DisplayName="If - Not ErrorLogs From Add Row to dt_BMStructure" sap:VirtualizedContainerService.HintSize="538,272" sap2010:WorkflowViewState.IdRef="If_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Throw DisplayName="Throw - ErrorLogs with Errors" Exception="[New Exception(&quot;Error while adding rows to dt_BMStructure&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_4" />
+        </If.Else>
+      </If>
+      <ui:RetryScope DisplayName="Retry Scope - Bulk Insert into DB" sap:VirtualizedContainerService.HintSize="538,1010" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+        <ui:RetryScope.ActivityBody>
+          <ActivityAction>
+            <Sequence DisplayName="Bulk Insert into DB" sap:VirtualizedContainerService.HintSize="496,835" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="ui:DatabaseConnection" Name="DBConnection" />
+                <Variable x:TypeArguments="x:Int32" Name="AffectedRows" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:DatabaseTransaction ContinueOnError="{x:Null}" ConnectionString="[in_connectionStringDB.Trim]" DatabaseConnection="[DBConnection]" DisplayName="Start Transaction - Bulk Insert into DB" sap:VirtualizedContainerService.HintSize="434,271" sap2010:WorkflowViewState.IdRef="DatabaseTransaction_2" ProviderName="Microsoft.Data.SqlClient" UseTransaction="True">
+                <ui:DatabaseTransaction.Body>
+                  <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[AffectedRows]" DataTable="[dt_BMStructure]" DisplayName="Insert - Bulk Insert dt_BMStructure" ExistingDbConnection="[DBConnection]" sap:VirtualizedContainerService.HintSize="334,161" sap2010:WorkflowViewState.IdRef="InsertDataTable_1" TableName="%[RPA_CRCCS].[RPA_CRCCS].[BM_INPUT]" />
+                </ui:DatabaseTransaction.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:DatabaseTransaction>
+              <If Condition="[AffectedRows = dt_BMStructure.RowCount]" DisplayName="If All records added to DB" sap:VirtualizedContainerService.HintSize="434,413" sap2010:WorkflowViewState.IdRef="If_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <ui:LogMessage DisplayName="Log Message - Inserted to DB" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Records added to the DB: &quot; + AffectedRows.ToString + &quot; rows affected.&quot;]" />
+                </If.Then>
+                <If.Else>
+                  <Throw DisplayName="Throw - Bulk Insert Failed" Exception="[New Exception(&quot;Could not insert the data into the DB&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:RetryScope.ActivityBody>
+        <ui:RetryScope.Condition>
+          <ActivityFunc x:TypeArguments="x:Boolean" />
+        </ui:RetryScope.Condition>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:RetryScope>
+    </Sequence>
+    <ui:LogMessage DisplayName="End" sap:VirtualizedContainerService.HintSize="600,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Bulk Insert DB: END&quot;]" />
+  </Sequence>
+</Activity>

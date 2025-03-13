@@ -1,0 +1,74 @@
+﻿{
+"DispatcherConfiguration":
+	[
+		{
+			"environment":"DEV",
+			"batId":"0",
+			"batName":"",
+			"limitBulk":"15000",
+			"retryFlag":"False",
+			"typeDispatcher":"",
+			"startDateTime":"",
+			"uploaderSubjectMessage":"{projectName} - Dispatcher",
+			"errorSubjectMessage":"{projectName} - Dispatcher Application Error",
+			"bizSubjectMessage":"{projectName} - Dispatcher Bussines Error",
+			"batchPriority":"NORMAL"
+		}
+	],
+"DefaultConfiguration":
+	[
+		{			
+			"analyticsUseCaseName":"----EDIT FIELD ---",
+			"projectName":"----EDIT FIELD ---",
+			"processId":"----EDIT FIELD ---",			
+			"queueNamePerformer":"----EDIT FIELD ---",
+			"queueNameDispatcher":"----EDIT FIELD ---",			
+			"emailPort":"",
+			"emailServer":"",					
+			"logLastModByVar":"",			
+			"isAPI":"False", 			
+			"connectionStringDB":"",						
+			"stringOrchDBConnection":"connectionStringVer2",
+			"credentialOrchDBConnection":"connectionStringCredentials", 			
+			"endpointOrchDBConnection":"rpaCoeApiDbUrl", 
+			"credentialApiOrchDBConnection":"rpaCoeApiDbCred",			
+			"errorEmailCc":"----EDIT FIELD ---@equifax.com",
+			"errorEmailBcc":"----EDIT FIELD ---@equifax.com",
+			"errorEmailTo":"----EDIT FIELD ---@equifax.com",
+			"errorEmailFrom":"----EDIT FIELD ---@equifax.com",
+			"errorEmailFromName":"----EDIT FIELD ---",
+			"errorSubjectMessage":"{projectName} - There is an error with the rpa process",
+			"noTransactionsSubjectMessage":"{projectName} - No more transactions to process",
+			"shouldStopSubjectMessage":"{projectName} - The bot has been stopped from orchestrator",
+			"stopForcedSubjectMessage":"{projectName} - The bot has been stopped by force",			
+			"successEmailCc":"----EDIT FIELD ---@equifax.com",
+			"successEmailBcc":"----EDIT FIELD ---@equifax.com",
+			"successEmailTo":"----EDIT FIELD ---@equifax.com",
+			"successEmailFrom":"----EDIT FIELD ---@equifax.com",
+			"successEmailFromName":"----EDIT FIELD ---",			
+			"selectActionOption":"2"	,
+			"transactionAttempts":"3"
+		}
+	],
+"ErrorHandling":
+	[
+		{
+			"wantToSendScreenshotOnError":"False",
+			"screeshotErrorFilePath":"\\screenshot.jpg",
+			"errorMessage":"",
+			"errorType":"",
+			"currentStep":"",
+			"flowError":"False",
+			"stopForced":"False"	
+		}
+	],
+"PerformerConfiguration":
+	[
+		{	
+			"transactionID":"",
+			"batId":"",
+			"startDateTime":"",
+			"openAppRequired":"True"
+		}
+	]	
+}

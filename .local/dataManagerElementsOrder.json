@@ -1,0 +1,524 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DispatcherConfiguration&Sequence_1",
+        "PerformerConfiguration&Sequence_1",
+        "DefaultConfiguration&Sequence_1",
+        "ErrorHandling&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/DispatcherMain.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CurrentTransaction&Flowchart_3",
+        "FinalMessage&Sequence_15",
+        "emailMessage&Sequence_14",
+        "dt_Results&TryCatch_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ErrorHandling",
+        "in_DispatcherConfiguration",
+        "in_DefaultConfiguration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/VerifyDispatcherQueue.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TypeDispatcherOrg&Sequence_1",
+        "QueueItems&Sequence_1",
+        "Reference&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_DispatcherConfiguration",
+        "out_CurrentTransaction",
+        "in_DefaultConfiguration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/ETL.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_TransactionData&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_DispatcherConfiguration",
+        "in_CurrentTransaction",
+        "in_DefaultConfiguration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Performer/PerformerMain.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ShouldStop&Flowchart_1",
+        "CurrentTransaction&Flowchart_1",
+        "shouldStopMessage&Sequence_2",
+        "stopForcedMessage&Sequence_3",
+        "dt_Transaction&Sequence_4",
+        "NoTransactionsMessage&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PerformerConfiguration",
+        "in_ErrorHandling",
+        "in_DefaultConfiguration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Performer/StartPerformer.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "io_PerformerConfiguration",
+        "in_DefaultConfiguration",
+        "io_ErrorHandling"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/INIT/Initialization.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_DispatcherConfiguration",
+        "out_PerformerConfiguration",
+        "out_DefaultConfiguration",
+        "out_ErrorHandling"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/INIT/PreSetConfigurationVariables.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "io_DispatcherConfiguration",
+        "io_PerformerConfiguration",
+        "io_DefaultConfiguration",
+        "io_ErrorHandling"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Performer/GetTransaction.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BotId&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_startDateTime",
+        "in_QueueName",
+        "out_CurrentTransaction",
+        "out_dt_Results",
+        "in_IsApi",
+        "in_ConnectionString",
+        "out_InputId",
+        "out_BatchId",
+        "in_AnalyticsUseCaseName",
+        "in_AnalyticsUseCaseNameReal"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Performer/RollBackSteps.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_DefaultConfiguration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Performer/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_ProcessName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Performer/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Performer/ErrorHandling.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExceptionType&Sequence_1",
+        "UpdateStatus&Sequence_1",
+        "InputId&Sequence_1",
+        "BatchId&Sequence_1",
+        "BotId&Sequence_1",
+        "dt_Transaction&Sequence_1",
+        "LogDetailMessage&Sequence_1",
+        "LogFields&Sequence_1",
+        "AnalyticsFields&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_PerformerConfiguration",
+        "in_CurrentTransaction",
+        "io_ErrorHandling",
+        "in_DefaultConfiguration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/DispatcherErrorHandling.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BizMessage&Sequence_2",
+        "ExceptionMessage&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_DefaultConfiguration",
+        "in_DispatcherConfiguration",
+        "in_CurrentTransaction",
+        "in_ErrorHandling"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/ETLCustom.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_TransactionData&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_CurrentTransaction",
+        "io_DispatcherConfiguration",
+        "in_DefaultConfiguration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/CreateBatchID.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_QueryResults&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ProcessId",
+        "in_ConnectionStringDB",
+        "in_IsApi",
+        "out_BatName",
+        "out_BatchId",
+        "in_Environment"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Database/DatabaseManager.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Query&Sequence_1",
+        "QueryType&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_QueryName",
+        "in_ParamArray",
+        "out_dt_QueryResults",
+        "in_IsApi",
+        "in_ConnectionString"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Database/DatabaseMain.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Request&Sequence_1",
+        "ApiDbEndPoint&Sequence_1",
+        "ResponseContent&Sequence_1",
+        "ResponseStatus&Sequence_1",
+        "ResponseJson&Sequence_10",
+        "ConnectionString&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_QueryType",
+        "in_QueryString",
+        "out_dt_Results",
+        "in_IsAPI",
+        "in_ConnectionStringDB"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/PushQueueItems.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_ResultsDataTable&Flowchart_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_DispatcherConfiguration",
+        "in_DefaultConfiguration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/BulkInsertDB.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ErrorLog&Sequence_1",
+        "dt_BMStructure&Sequence_1",
+        "DBConnection&Sequence_2",
+        "AffectedRows&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_dt_InputData",
+        "in_BotId",
+        "in_connectionStringDB",
+        "in_BatchId"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/AddQueueItems.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_UploadData&Sequence_1",
+        "dt_UploadResults&Sequence_1",
+        "BatchPriority&Sequence_2",
+        "InputID&Sequence_2",
+        "BatID&Sequence_2",
+        "Reference&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_QueueName",
+        "in_BatchPriority",
+        "in_ResultsDataTable"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/VerifyDispatcherNewItems.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_ResultsDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_IsApi",
+        "in_ConnectionStringDB",
+        "in_BatchId"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/INIT/ConfigurationVariables.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "JsonFile&Sequence_1",
+        "JsonMain&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_PerformerConfiguration",
+        "out_DispatcherConfiguration",
+        "out_DefaultConfiguration",
+        "out_ErrorHandling"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Performer/CloseTransaction.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InputId&Sequence_1",
+        "LogFields&Sequence_1",
+        "AnalyticsFields&Sequence_1",
+        "LogDetailMessage&Sequence_1",
+        "BatId&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_AnalyticsUseCaseName",
+        "in_AnalyticsUseCaseNameReal",
+        "in_ConnectionString",
+        "in_IsApi",
+        "in_CurrentTransaction",
+        "in_QueueName",
+        "in_ProcessId",
+        "in_StartDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Performer/VerifyPerformerQueue.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueItems&Sequence_1",
+        "ListQueueItems&Sequence_1",
+        "TransactionIdentifier&Sequence_2",
+        "BatId&Sequence_2",
+        "dt_Results&Sequence_2",
+        "LogError&Sequence_2",
+        "AnalyticsDictionary&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_QueueName",
+        "in_ConnectionString",
+        "in_IsApi",
+        "in_logLastModByVar",
+        "in_UseCaseName",
+        "in_UseCaseNameReal"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/UpdateDispatcherQueueItems.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DispatcherQueueItems&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_QueueName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher/UpdateQueueItems.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DispatcherQueueItems&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_QueueName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Email/EmailErrorHandling.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BodyMessage&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ErrorHandling",
+        "in_DefaultConfiguration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Email/EmailSender.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ImgLogo&Sequence_1",
+        "FileExists&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_EmailSubject",
+        "in_EmailBody",
+        "in_Attachment",
+        "in_SmtpServer",
+        "in_SmtpPort",
+        "in_SenderName",
+        "in_SenderEmail",
+        "in_RecipientEmail",
+        "in_BccEmail",
+        "in_CcEmail"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/INIT/VariablesAddition.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "io_DefaultConfiguration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCases/EmailSender_TestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DispatcherConfiguration&Sequence_2",
+        "PerformerConfiguration&Sequence_2",
+        "SmtpServer&Sequence_1",
+        "SmtpPort&Sequence_1",
+        "ErrorHandling&Sequence_1",
+        "DefaultConfiguration&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_EmailSubject",
+        "in_EmailBody",
+        "in_Attachment",
+        "in_BccEmail",
+        "in_CcEmail",
+        "in_RecipientEmail",
+        "in_SenderName",
+        "in_SenderEmail"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCases/DatabaseManager_TestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ErrorHandling&Sequence_1",
+        "QueryName&Sequence_1",
+        "dt_QueryResults&Sequence_1",
+        "IsApi&Sequence_1",
+        "ConnectionString&Sequence_1",
+        "ParamDB&Sequence_1",
+        "CurrentDate&Sequence_1",
+        "DefaultConfiguration&Sequence_2",
+        "PerformerConfiguration&Sequence_2",
+        "DispatcherConfiguration&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

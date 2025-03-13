@@ -1,0 +1,80 @@
+{
+  "name": "RPA0034_DP_CustomerPortal",
+  "description": "Historical Consultation",
+  "main": "Main.xaml",
+  "dependencies": {
+    "Connection.String.Builder.Core": "[1.0.5]",
+    "Logging.Standards.Library.Core": "[1.0.7]",
+    "RPA.COE.Analytics.Core": "[1.1.13]",
+    "UiPath.Database.Activities": "[1.9.0]",
+    "UiPath.System.Activities": "[24.10.7]",
+    "UiPath.System.Activities.Runtime": "[24.10.7]",
+    "UiPath.Testing.Activities": "[24.10.3]",
+    "UiPath.UIAutomation.Activities": "[24.10.10]",
+    "UiPath.UIAutomation.Activities.Runtime": "[24.10.10]",
+    "UiPath.WebAPI.Activities": "[1.21.1]",
+    "UiPath.WebAPI.Activities.Runtime": "[1.21.1]",
+    "UiPath.WebAPI.Runtime": "[1.18.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.10.5.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "687598df-98ad-4983-ba5d-99d7b9ff39f8",
+        "testCaseType": "TestCase",
+        "fileName": "TestCases\\EmailSender_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6a889b3d-b2f8-4eb0-9e3e-0e0841e8c1a9",
+        "testCaseType": "TestCase",
+        "fileName": "TestCases\\DatabaseManager_TestCase.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "316f4755-baa3-4e3e-b468-9cfb7717c7a9",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
