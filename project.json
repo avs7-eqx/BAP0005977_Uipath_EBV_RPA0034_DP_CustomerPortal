@@ -7,11 +7,10 @@
     "Logging.Standards.Library.Core": "[1.0.7]",
     "RPA.COE.Analytics.Core": "[1.1.13]",
     "UiPath.Database.Activities": "[1.9.0]",
+    "UiPath.Excel.Activities": "[2.24.4]",
     "UiPath.System.Activities": "[24.10.7]",
-    "UiPath.System.Activities.Runtime": "[24.10.7]",
     "UiPath.Testing.Activities": "[24.10.3]",
     "UiPath.UIAutomation.Activities": "[24.10.10]",
-    "UiPath.UIAutomation.Activities.Runtime": "[24.10.10]",
     "UiPath.WebAPI.Activities": "[1.21.1]",
     "UiPath.WebAPI.Activities.Runtime": "[1.21.1]",
     "UiPath.WebAPI.Runtime": "[1.18.0]"

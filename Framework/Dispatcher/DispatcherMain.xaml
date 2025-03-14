@@ -138,7 +138,7 @@
               <av:PointCollection x:Key="ConnectorLocation">310,404 310,434 310.5,434 310.5,436.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch sap2010:Annotation.AnnotationText="This activity retrieves the current date directly from the database, ensuring that the dispatcher works with the most accurate and up-to-date information. It is essential for time-based validations and ensures data is processed with the correct timestamp." DisplayName="Get Start Time " sap:VirtualizedContainerService.HintSize="200,214" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+          <TryCatch sap2010:Annotation.AnnotationText="This activity retrieves the current date directly from the database, ensuring that the dispatcher works with the most accurate and up-to-date information. It is essential for time-based validations and ensures data is processed with the correct timestamp." DisplayName="Get Start Time " sap:VirtualizedContainerService.HintSize="438,1118" sap2010:WorkflowViewState.IdRef="TryCatch_9">
             <TryCatch.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dt_Results" />
             </TryCatch.Variables>
@@ -149,13 +149,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="Get Start Time - Dispatcher" sap:VirtualizedContainerService.HintSize="496,346" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Get Start Time - Dispatcher" sap:VirtualizedContainerService.HintSize="400,818" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DatabaseManager.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Framework\Database\DatabaseManager.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="DatabaseManager.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,606" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Framework\Database\DatabaseManager.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="in_QueryName">selectDateFromDb</InArgument>
                     <InArgument x:TypeArguments="s:String[]" x:Key="in_ParamArray" />
@@ -163,8 +163,11 @@
                     <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsApi">[CBool(in_DefaultConfiguration("isAPI").ToString.Trim)]</InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="in_ConnectionString">[in_DefaultConfiguration("connectionStringDB").ToString.Trim]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
+                  <ui:InvokeWorkflowFile.ContinueOnError>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </ui:InvokeWorkflowFile.ContinueOnError>
                 </ui:InvokeWorkflowFile>
-                <Assign DisplayName="Assign - startDateTime" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+                <Assign DisplayName="Assign - startDateTime" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_8">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[in_DispatcherConfiguration("startDateTime")]</OutArgument>
                   </Assign.To>
@@ -175,7 +178,7 @@
               </Sequence>
             </TryCatch.Try>
             <TryCatch.Catches>
-              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,21" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_9">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -186,7 +189,7 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                   </ActivityAction.Argument>
-                  <ui:MultipleAssign DisplayName="Exception - Get Start Time" sap:VirtualizedContainerService.HintSize="423,194" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                  <ui:MultipleAssign DisplayName="Exception - Get Start Time" sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
                     <ui:MultipleAssign.AssignOperations>
                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_42">
@@ -229,12 +232,12 @@
             </TryCatch.Catches>
           </TryCatch>
           <FlowStep.Next>
-            <FlowDecision x:Name="__ReferenceID16" Condition="[Cbool(in_ErrorHandling(&quot;flowError&quot;).ToString.Trim)]" DisplayName="Get Start Time Error?" sap:VirtualizedContainerService.HintSize="113,87" sap2010:WorkflowViewState.IdRef="FlowDecision_15">
+            <FlowDecision x:Name="__ReferenceID16" Condition="[Cbool(in_ErrorHandling(&quot;flowError&quot;).ToString.Trim)]" DisplayName="Get Start Time Error?" sap:VirtualizedContainerService.HintSize="114,87" sap2010:WorkflowViewState.IdRef="FlowDecision_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <av:Point x:Key="ShapeLocation">253.5,436.5</av:Point>
-                  <av:Size x:Key="ShapeSize">113,87</av:Size>
+                  <av:Size x:Key="ShapeSize">114,87</av:Size>
                   <av:PointCollection x:Key="FalseConnector">367.5,480 470,480 470,533.5999999999999</av:PointCollection>
                   <av:PointCollection x:Key="TrueConnector">253.5,480 110,480 110,2510.5</av:PointCollection>
                 </scg:Dictionary>
@@ -248,7 +251,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">210,2610 710,2610</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <TryCatch sap2010:Annotation.AnnotationText="This activity sends a notification to the support team in the event of an error. It ensures that relevant personnel are promptly informed of issues that require attention, facilitating quicker resolution and minimizing downtime." DisplayName="App Exception Notification - Dispatcher" sap:VirtualizedContainerService.HintSize="434,445" sap2010:WorkflowViewState.IdRef="TryCatch_21">
+                  <TryCatch sap2010:Annotation.AnnotationText="This activity sends a notification to the support team in the event of an error. It ensures that relevant personnel are promptly informed of issues that require attention, facilitating quicker resolution and minimizing downtime." DisplayName="App Exception Notification - Dispatcher" sap:VirtualizedContainerService.HintSize="534,783" sap2010:WorkflowViewState.IdRef="TryCatch_21">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -265,13 +268,13 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:ReadTextFile File="{x:Null}" Content="[emailMessage]" DisplayName="Read bodyErrorMessageWithoutScreenshot File" FileName="Framework\Email\Templates\bodyErrorMessageWithoutScreenshot.txt" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_3" />
+                        <ui:ReadTextFile File="{x:Null}" Content="[emailMessage]" DisplayName="Read bodyErrorMessageDispatcher File" FileName="Framework\Email\Templates\bodyErrorMessageDispatcher.txt" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_3" />
                         <Assign DisplayName="Assign - emailMessage" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_18">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[emailMessage]</OutArgument>
                           </Assign.To>
                           <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">[emailMessage.Replace("[Robot]", in_DefaultConfiguration("logLastModByVar").ToString.Trim ).Replace("[Error_Message]", in_ErrorHandling("errorMessage").ToString.Trim).Replace("[XAML]", in_ErrorHandling("currentStep").ToString.Trim)]</InArgument>
+                            <InArgument x:TypeArguments="x:String">[emailMessage.Replace("[Robot]", in_DefaultConfiguration("logLastModByVar").ToString.Trim ).Replace("[Error_Message]", in_ErrorHandling("errorMessage").ToString.Trim).Replace("[CurrentStep]", in_ErrorHandling("currentStep").ToString.Trim)]</InArgument>
                           </Assign.Value>
                         </Assign>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EmailSender.xaml - App Exception - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="Framework\Email\EmailSender.xaml">
@@ -291,10 +294,10 @@
                       </Sequence>
                     </TryCatch.Try>
                     <TryCatch.Catches>
-                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,210" sap2010:WorkflowViewState.IdRef="Catch`1_21">
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,21" sap2010:WorkflowViewState.IdRef="Catch`1_21">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -520,7 +523,7 @@
                                 <av:PointCollection x:Key="ConnectorLocation">730,1207.6 730,1240.5</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <TryCatch sap2010:Annotation.AnnotationText="This sequence assigns the BatchID, which was stored in the InProgress transaction, to a dictionary required by the dispatcher. This ensures the dispatcher can continue processing with the current value of the BatchID." DisplayName="Retry" sap:VirtualizedContainerService.HintSize="517,432" sap2010:WorkflowViewState.IdRef="TryCatch_14">
+                            <TryCatch sap2010:Annotation.AnnotationText="This sequence assigns the BatchID, which was stored in the InProgress transaction, to a dictionary required by the dispatcher. This ensures the dispatcher can continue processing with the current value of the BatchID." DisplayName="Retry" sap:VirtualizedContainerService.HintSize="200,184" sap2010:WorkflowViewState.IdRef="TryCatch_14">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
