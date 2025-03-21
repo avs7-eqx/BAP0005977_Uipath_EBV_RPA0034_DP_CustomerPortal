@@ -23241,9 +23241,9 @@
     "restore": {
       "projectUniqueName": "RPA0034_DP_CustomerPortal",
       "projectName": "RPA0034_DP_CustomerPortal",
-      "projectPath": "C:\\Users\\avs7\\UiPath\\RPA0034_DP_CustomerPortal\\RPA0034_DP_CustomerPortal\\.local",
+      "projectPath": "C:\\Users\\avs7\\Documents\\34\\RPA0034_DP_CustomerPortal\\.local",
       "packagesPath": "C:\\Users\\avs7\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\avs7\\UiPath\\RPA0034_DP_CustomerPortal\\RPA0034_DP_CustomerPortal\\.local"
+      "outputPath": "C:\\Users\\avs7\\Documents\\34\\RPA0034_DP_CustomerPortal\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -23312,5 +23312,14 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU3005",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DocumentFormat.OpenXml 2.16.0' from source 'https://syqgcpdrpaoc.us.equifax.com/nuget/v3/4b43de0a-aff3-4270-91de-d51ef7b655b8/index.json': The package signature file entry is invalid. The central directory header field 'compression method' has an invalid value (8).",
+      "libraryId": "DocumentFormat.OpenXml"
+    }
+  ]
 }

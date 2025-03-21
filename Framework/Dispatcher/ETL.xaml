@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1162,1160</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>624,1160</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ETL_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -104,38 +104,44 @@
     <Flowchart.StartNode>
       <x:Reference>__ReferenceID7</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID7">
+    <FlowStep x:Name="__ReferenceID7" sap2010:WorkflowViewState.IdRef="FlowStep_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,104</av:Point>
           <av:Size x:Key="ShapeSize">200,52</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,156.8 300,192.5</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">300,156 300,236</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Start" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;ETL: START&quot;]" />
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID0">
+        <FlowStep x:Name="__ReferenceID6" sap2010:WorkflowViewState.IdRef="FlowStep_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">200,192.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,170</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">300,362.5 300,392.5 300.5,392.5 300.5,406.5</av:PointCollection>
+              <av:Point x:Key="ShapeLocation">200,236</av:Point>
+              <av:Size x:Key="ShapeSize">200,52</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">300,288 300,318 300.5,318 300.5,366.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:Comment DisplayName="ETL Steps" sap:VirtualizedContainerService.HintSize="200,170" sap2010:WorkflowViewState.IdRef="Comment_1" Text="&quot;Add the logic to retrieve the process input data to be added to the BD here. You will need to insert data into this datatable dt_TransactionData&quot;" />
+          <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[dt_TransactionData]" Delimitator="Semicolon" DelimitatorForViewModel="Semicolon" DisplayName="Read CSV" FilePath="Input_Consulta Histórico.csv" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" IncludeColumnNames="False">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ReadCsvFile>
           <FlowStep.Next>
-            <FlowDecision x:Name="__ReferenceID1" Condition="[dt_TransactionData.RowCount &gt; 0]" DisplayName="Transaction Data" sap:VirtualizedContainerService.HintSize="93,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+            <FlowDecision x:Name="__ReferenceID0" Condition="[dt_TransactionData.RowCount &gt; 0]" DisplayName="Transaction Data" sap:VirtualizedContainerService.HintSize="94,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <av:Point x:Key="ShapeLocation">253.5,406.5</av:Point>
-                  <av:Size x:Key="ShapeSize">93,87</av:Size>
-                  <av:PointCollection x:Key="TrueConnector">253.5,450 150,450 150,514</av:PointCollection>
-                  <av:PointCollection x:Key="FalseConnector">347.5,450 450,450 450,514</av:PointCollection>
+                  <av:Point x:Key="ShapeLocation">253.5,366.5</av:Point>
+                  <av:Size x:Key="ShapeSize">94,87</av:Size>
+                  <av:PointCollection x:Key="TrueConnector">253.5,410 150,410 150,514</av:PointCollection>
+                  <av:PointCollection x:Key="FalseConnector">347.5,410 450,410 450,514</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <FlowDecision.True>
-                <FlowStep x:Name="__ReferenceID2">
+                <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">50,514</av:Point>
@@ -159,7 +165,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
                   <FlowStep.Next>
-                    <FlowStep x:Name="__ReferenceID4">
+                    <FlowStep x:Name="__ReferenceID3" sap2010:WorkflowViewState.IdRef="FlowStep_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">49.999999999999986,603.6</av:Point>
@@ -169,18 +175,10 @@
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This sequence is going to insert multiples rows in the database using a bulk activity." DisplayName="BulkInsert into DB" sap:VirtualizedContainerService.HintSize="200,109" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\Dispatcher\BulkInsertDB.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_BatchId">
-                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="io_DispatcherConfiguration(&quot;batId&quot;).ToString.Trim" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_connectionStringDB">
-                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_DefaultConfiguration(&quot;connectionStringDB&quot;).ToString.Trim" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_BotId">
-                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_DefaultConfiguration(&quot;logLastModByVar&quot;).ToString.Trim" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_InputData">
-                            <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dt_TransactionData" />
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_BatchId">[io_DispatcherConfiguration("batId").ToString.Trim]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_connectionStringDB">[in_DefaultConfiguration("connectionStringDB").ToString.Trim]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_BotId">[in_DefaultConfiguration("logLastModByVar").ToString.Trim]</InArgument>
+                          <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_InputData">[dt_TransactionData]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -190,7 +188,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:InvokeWorkflowFile>
                       <FlowStep.Next>
-                        <FlowStep x:Name="__ReferenceID6">
+                        <FlowStep x:Name="__ReferenceID5" sap2010:WorkflowViewState.IdRef="FlowStep_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">49.999999999999986,748.4</av:Point>
@@ -206,7 +204,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:SetTransactionProgress>
                           <FlowStep.Next>
-                            <FlowStep x:Name="__ReferenceID5">
+                            <FlowStep x:Name="__ReferenceID4" sap2010:WorkflowViewState.IdRef="FlowStep_6">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">50,843.6</av:Point>
@@ -223,7 +221,7 @@
                 </FlowStep>
               </FlowDecision.True>
               <FlowDecision.False>
-                <FlowStep x:Name="__ReferenceID3">
+                <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">350,514</av:Point>

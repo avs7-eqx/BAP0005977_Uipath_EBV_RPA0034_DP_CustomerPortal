@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1162,1000</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>680,1000</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ETLWithAPI_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -88,9 +88,12 @@
       <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap2010:Annotation.AnnotationText="This activity enables the user to execute the complete ETL (Extract, Transform, Load) process using API connections to an SQL database or other alternatives that do not require a Bulk Insert operation. It allows flexibility in data extraction and transformation before loading it into the target system.&#xA;&#xD;&#xA;Args&#xA;- in_CurrentTransaction {in}  QueueItem  // QueueItem from Orchestrator.&#xA;- in_DefaultConfiguration {in} Dictionary Of String, String ) // Dictionary with default values.&#xA;- io_DispatcherConfiguration {in/out} Dictionary Of String, String ) // Dictionary with the project values." DisplayName="ETLCustom" sap:VirtualizedContainerService.HintSize="634,935" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap2010:Annotation.AnnotationText="This activity enables the user to execute the complete ETL (Extract, Transform, Load) process using API connections to an SQL database or other alternatives that do not require a Bulk Insert operation. It allows flexibility in data extraction and transformation before loading it into the target system.&#xA;&#xA;Args&#xA;- in_CurrentTransaction {in}  QueueItem  // QueueItem from Orchestrator.&#xA;- in_DefaultConfiguration {in} Dictionary Of String, String ) // Dictionary with default values.&#xA;- io_DispatcherConfiguration {in/out} Dictionary Of String, String ) // Dictionary with the project values." DisplayName="ETLCustom" sap:VirtualizedContainerService.HintSize="634,935" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TransactionData" />
     </Flowchart.Variables>
@@ -159,7 +162,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID6">
+        <FlowStep x:Name="__ReferenceID5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">50,523.5</av:Point>
@@ -189,43 +192,49 @@
         </sap:WorkflowViewStateService.ViewState>
       </Throw>
     </FlowStep>
-    <FlowDecision x:Name="__ReferenceID4" Condition="[dt_TransactionData.RowCount &gt; 0]" DisplayName="Transaction Data" sap:VirtualizedContainerService.HintSize="93,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1" True="{x:Reference __ReferenceID2}" False="{x:Reference __ReferenceID3}">
+    <FlowDecision x:Name="__ReferenceID4" Condition="[dt_TransactionData.RowCount &gt; 0]" DisplayName="Transaction Data" sap:VirtualizedContainerService.HintSize="94,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1" True="{x:Reference __ReferenceID2}" False="{x:Reference __ReferenceID3}">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <av:Point x:Key="ShapeLocation">253.5,336.5</av:Point>
-          <av:Size x:Key="ShapeSize">93,87</av:Size>
+          <av:Size x:Key="ShapeSize">94,87</av:Size>
           <av:PointCollection x:Key="TrueConnector">253.5,380 150,380 150,434</av:PointCollection>
           <av:PointCollection x:Key="FalseConnector">346.5,380 450,380 450,434</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </FlowDecision>
-    <FlowStep x:Name="__ReferenceID5">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">200,192.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,113</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,306.1 300,336.1 300.7,336.1 300.7,336.5</av:PointCollection>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:Comment DisplayName="Trigger Steps" sap:VirtualizedContainerService.HintSize="200,113" sap2010:WorkflowViewState.IdRef="Comment_1" Text="&quot;Add the logic to retrieve the process input data to be added to the BD here&quot;" />
-      <FlowStep.Next>
-        <x:Reference>__ReferenceID4</x:Reference>
-      </FlowStep.Next>
-    </FlowStep>
     <FlowStep x:Name="__ReferenceID7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,104</av:Point>
           <av:Size x:Key="ShapeSize">200,52</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,156.8 300,192.5</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">300,156 300,206</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Start" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;ETL Custom: START&quot;]" />
       <FlowStep.Next>
-        <x:Reference>__ReferenceID5</x:Reference>
+        <FlowStep x:Name="__ReferenceID6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">200,206</av:Point>
+              <av:Size x:Key="ShapeSize">200,52</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">300,258 300,288 300.5,288 300.5,336.5</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[dt_TransactionData]" Delimitator="Semicolon" DelimitatorForViewModel="Semicolon" DisplayName="Read CSV" FilePath="Input_Consulta Histórico.csv" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" IncludeColumnNames="False">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ReadCsvFile>
+          <FlowStep.Next>
+            <x:Reference>__ReferenceID4</x:Reference>
+          </FlowStep.Next>
+        </FlowStep>
       </FlowStep.Next>
     </FlowStep>
+    <x:Reference>__ReferenceID5</x:Reference>
     <x:Reference>__ReferenceID6</x:Reference>
   </Flowchart>
 </Activity>

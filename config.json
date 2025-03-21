@@ -19,10 +19,10 @@
 	[
 		{			
 			"analyticsUseCaseName":"----EDIT FIELD ---",
-			"projectName":"----EDIT FIELD ---",
-			"processId":"----EDIT FIELD ---",			
-			"queueNamePerformer":"----EDIT FIELD ---",
-			"queueNameDispatcher":"----EDIT FIELD ---",			
+			"projectName":"RPA0034_DP_CustomerPortal",
+			"processId":"",			
+			"queueNamePerformer":"Performer_0034_CustomerPortal",
+			"queueNameDispatcher":"Dispatcher_0034_CustomerPortal",			
 			"emailPort":"",
 			"emailServer":"",					
 			"logLastModByVar":"",			

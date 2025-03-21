@@ -6013,7 +6013,7 @@
         "Version": "5.2.1"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.1\\lib\\net6.0\\Microsoft.Data.SqlClient.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.1\\runtimes\\win\\lib\\net6.0\\Microsoft.Data.SqlClient.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.1"
     },
@@ -6198,7 +6198,9 @@
         "Id": "Microsoft.Management.Infrastructure.CimCmdlets",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.management.infrastructure.cimcmdlets\\7.2.24\\runtimes\\win\\lib\\net6.0\\Microsoft.Management.Infrastructure.CimCmdlets.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.management.infrastructure.cimcmdlets\\7.2.24"
     },
     {
@@ -6214,7 +6216,10 @@
         "Id": "Microsoft.Management.Infrastructure.Runtime.Win",
         "Version": "3.0.0"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes\\win-x64\\lib\\netstandard1.6\\microsoft.management.infrastructure.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes\\win-x64\\lib\\netstandard1.6\\microsoft.management.infrastructure.native.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0"
     },
     {
@@ -6250,7 +6255,9 @@
         "Id": "Microsoft.PowerShell.Commands.Diagnostics",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.commands.diagnostics\\7.2.24\\runtimes\\win\\lib\\net6.0\\Microsoft.PowerShell.Commands.Diagnostics.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.commands.diagnostics\\7.2.24"
     },
     {
@@ -6258,7 +6265,9 @@
         "Id": "Microsoft.PowerShell.Commands.Management",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.commands.management\\7.2.24\\runtimes\\win\\lib\\net6.0\\Microsoft.PowerShell.Commands.Management.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.commands.management\\7.2.24"
     },
     {
@@ -6266,7 +6275,9 @@
         "Id": "Microsoft.PowerShell.Commands.Utility",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.commands.utility\\7.2.24\\runtimes\\win\\lib\\net6.0\\Microsoft.PowerShell.Commands.Utility.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.commands.utility\\7.2.24"
     },
     {
@@ -6274,7 +6285,9 @@
         "Id": "Microsoft.PowerShell.ConsoleHost",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.consolehost\\7.2.24\\runtimes\\win\\lib\\net6.0\\Microsoft.PowerShell.ConsoleHost.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.consolehost\\7.2.24"
     },
     {
@@ -6282,7 +6295,9 @@
         "Id": "Microsoft.PowerShell.CoreCLR.Eventing",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.coreclr.eventing\\7.2.24\\runtimes\\win\\lib\\net6.0\\Microsoft.PowerShell.CoreCLR.Eventing.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.coreclr.eventing\\7.2.24"
     },
     {
@@ -6308,7 +6323,9 @@
         "Id": "Microsoft.PowerShell.SDK",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.sdk\\7.2.24\\runtimes\\win\\lib\\net6.0\\Microsoft.PowerShell.SDK.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.sdk\\7.2.24"
     },
     {
@@ -6316,7 +6333,9 @@
         "Id": "Microsoft.PowerShell.Security",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.security\\7.2.24\\runtimes\\win\\lib\\net6.0\\Microsoft.PowerShell.Security.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.powershell.security\\7.2.24"
     },
     {
@@ -6373,7 +6392,7 @@
         "Version": "4.7.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\lib\\netstandard2.0\\Microsoft.Win32.Registry.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\runtimes\\win\\lib\\netstandard2.0\\Microsoft.Win32.Registry.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.win32.registry\\4.7.0"
     },
@@ -6383,7 +6402,7 @@
         "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.win32.registry.accesscontrol\\6.0.0\\lib\\net6.0\\Microsoft.Win32.Registry.AccessControl.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.win32.registry.accesscontrol\\6.0.0\\runtimes\\win\\lib\\net6.0\\Microsoft.Win32.Registry.AccessControl.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.win32.registry.accesscontrol\\6.0.0"
     },
@@ -6393,7 +6412,7 @@
         "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\lib\\net6.0\\Microsoft.Win32.SystemEvents.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\runtimes\\win\\lib\\net6.0\\Microsoft.Win32.SystemEvents.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0"
     },
@@ -6410,7 +6429,9 @@
         "Id": "Microsoft.WSMan.Management",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.wsman.management\\7.2.24\\runtimes\\win\\lib\\net6.0\\Microsoft.WSMan.Management.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.wsman.management\\7.2.24"
     },
     {
@@ -6418,7 +6439,9 @@
         "Id": "Microsoft.WSMan.Runtime",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.wsman.runtime\\7.2.24\\runtimes\\win\\lib\\net6.0\\Microsoft.WSMan.Runtime.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.wsman.runtime\\7.2.24"
     },
     {
@@ -6559,6 +6582,176 @@
         "C:\\Users\\avs7\\.nuget\\packages\\rpa.coe.analytics.core\\1.1.13\\lib\\net6.0-windows7.0\\RPA COE Analytics Core_Expressions_53656006.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\rpa.coe.analytics.core\\1.1.13"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Collections",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\lib\\netstandard1.3\\System.Collections.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.collections\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Diagnostics.Tools",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0\\lib\\netstandard1.3\\System.Diagnostics.Tools.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Diagnostics.Tracing",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.diagnostics.tracing\\4.3.0\\lib\\netstandard1.5\\System.Diagnostics.Tracing.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.diagnostics.tracing\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Globalization",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.globalization\\4.3.0\\lib\\netstandard1.3\\System.Globalization.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.globalization\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Globalization.Calendars",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.globalization.calendars\\4.3.0\\lib\\netstandard1.3\\System.Globalization.Calendars.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.globalization.calendars\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.IO",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.io\\4.3.0\\lib\\netstandard1.5\\System.IO.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.io\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Reflection",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.reflection\\4.3.0\\lib\\netstandard1.5\\System.Reflection.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.reflection\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Reflection.Extensions",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.reflection.extensions\\4.3.0\\lib\\netstandard1.3\\System.Reflection.Extensions.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.reflection.extensions\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Reflection.Primitives",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.reflection.primitives\\4.3.0\\lib\\netstandard1.3\\System.Reflection.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.reflection.primitives\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Resources.ResourceManager",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.resources.resourcemanager\\4.3.0\\lib\\netstandard1.3\\System.Resources.ResourceManager.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.resources.resourcemanager\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Runtime",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.runtime\\4.3.0\\lib\\netstandard1.5\\System.Runtime.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.runtime\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Runtime.Handles",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.runtime.handles\\4.3.0\\lib\\netstandard1.3\\System.Runtime.Handles.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.runtime.handles\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Runtime.InteropServices",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.runtime.interopservices\\4.3.0\\lib\\netstandard1.6\\System.Runtime.InteropServices.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.runtime.interopservices\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Text.Encoding",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.text.encoding\\4.3.0\\lib\\netstandard1.3\\System.Text.Encoding.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.text.encoding\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Text.Encoding.Extensions",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.text.encoding.extensions\\4.3.0\\lib\\netstandard1.3\\System.Text.Encoding.Extensions.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.text.encoding.extensions\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Threading.Tasks",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.threading.tasks\\4.3.0\\lib\\netstandard1.3\\System.Threading.Tasks.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.threading.tasks\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Threading.Timer",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.threading.timer\\4.3.0\\lib\\netstandard1.3\\System.Threading.Timer.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.any.system.threading.timer\\4.3.0"
     },
     {
       "Package": {
@@ -6780,6 +6973,94 @@
     },
     {
       "Package": {
+        "Id": "runtime.win.Microsoft.Win32.Primitives",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.microsoft.win32.primitives\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\Microsoft.Win32.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.microsoft.win32.primitives\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.win.System.Console",
+        "Version": "4.3.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.console\\4.3.1\\runtimes\\win\\lib\\netstandard1.3\\System.Console.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.console\\4.3.1"
+    },
+    {
+      "Package": {
+        "Id": "runtime.win.System.Diagnostics.Debug",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.diagnostics.debug\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Diagnostics.Debug.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.diagnostics.debug\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.win.System.IO.FileSystem",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.io.filesystem\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.IO.FileSystem.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.io.filesystem\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.win.System.Net.Primitives",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.net.primitives\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Net.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.net.primitives\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.win.System.Net.Sockets",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.net.sockets\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Net.Sockets.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.net.sockets\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.win.System.Runtime.Extensions",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0\\runtimes\\win\\lib\\netstandard1.5\\System.Runtime.Extensions.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.win7-x64.runtime.native.System.IO.Compression",
+        "Version": "4.3.2"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.win7-x64.runtime.native.system.io.compression\\4.3.2"
+    },
+    {
+      "Package": {
+        "Id": "runtime.win7.System.Private.Uri",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtimes\\win\\lib\\netstandard1.0\\System.Private.Uri.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "SharpZipLib",
         "Version": "1.4.2"
       },
@@ -6920,7 +7201,7 @@
         "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.data.odbc\\7.0.0\\lib\\net6.0\\System.Data.Odbc.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.data.odbc\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Data.Odbc.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.data.odbc\\7.0.0"
     },
@@ -6930,7 +7211,7 @@
         "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.data.oledb\\7.0.0\\lib\\net6.0\\System.Data.OleDb.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.data.oledb\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Data.OleDb.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.data.oledb\\7.0.0"
     },
@@ -6940,7 +7221,7 @@
         "Version": "4.8.6"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\lib\\netcoreapp2.1\\System.Data.SqlClient.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\runtimes\\win\\lib\\netcoreapp2.1\\System.Data.SqlClient.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.data.sqlclient\\4.8.6"
     },
@@ -6968,7 +7249,8 @@
         "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\lib\\net6.0\\System.Diagnostics.EventLog.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.Messages.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0"
     },
@@ -6978,7 +7260,7 @@
         "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.diagnostics.performancecounter\\7.0.0\\lib\\net6.0\\System.Diagnostics.PerformanceCounter.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.diagnostics.performancecounter\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.PerformanceCounter.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.diagnostics.performancecounter\\7.0.0"
     },
@@ -7004,7 +7286,7 @@
         "Version": "6.0.1"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.directoryservices\\6.0.1\\lib\\net6.0\\System.DirectoryServices.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.directoryservices\\6.0.1\\runtimes\\win\\lib\\net6.0\\System.DirectoryServices.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.directoryservices\\6.0.1"
     },
@@ -7014,7 +7296,7 @@
         "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.directoryservices.accountmanagement\\6.0.0\\lib\\net6.0\\System.DirectoryServices.AccountManagement.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.directoryservices.accountmanagement\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.DirectoryServices.AccountManagement.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.directoryservices.accountmanagement\\6.0.0"
     },
@@ -7024,7 +7306,7 @@
         "Version": "6.0.2"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.directoryservices.protocols\\6.0.2\\lib\\net6.0\\System.DirectoryServices.Protocols.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.directoryservices.protocols\\6.0.2\\runtimes\\win\\lib\\net6.0\\System.DirectoryServices.Protocols.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.directoryservices.protocols\\6.0.2"
     },
@@ -7034,7 +7316,7 @@
         "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.drawing.common\\7.0.0\\lib\\net6.0\\System.Drawing.Common.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.drawing.common\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Drawing.Common.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.drawing.common\\7.0.0"
     },
@@ -7079,7 +7361,9 @@
         "Id": "System.Globalization.Extensions",
         "Version": "4.3.0"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.globalization.extensions\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Globalization.Extensions.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.globalization.extensions\\4.3.0"
     },
     {
@@ -7115,7 +7399,9 @@
         "Id": "System.IO.Compression",
         "Version": "4.3.0"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.io.compression\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.IO.Compression.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.io.compression\\4.3.0"
     },
     {
@@ -7142,7 +7428,7 @@
         "Version": "4.5.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.io.filesystem.accesscontrol\\4.5.0\\lib\\netstandard2.0\\System.IO.FileSystem.AccessControl.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.io.filesystem.accesscontrol\\4.5.0\\runtimes\\win\\lib\\netstandard2.0\\System.IO.FileSystem.AccessControl.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.io.filesystem.accesscontrol\\4.5.0"
     },
@@ -7182,7 +7468,7 @@
         "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.io.ports\\6.0.0\\lib\\net6.0\\System.IO.Ports.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.io.ports\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.IO.Ports.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.io.ports\\6.0.0"
     },
@@ -7212,7 +7498,7 @@
         "Version": "6.0.2"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.management\\6.0.2\\lib\\net6.0\\System.Management.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.management\\6.0.2\\runtimes\\win\\lib\\net6.0\\System.Management.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.management\\6.0.2"
     },
@@ -7221,7 +7507,9 @@
         "Id": "System.Management.Automation",
         "Version": "7.2.24"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.management.automation\\7.2.24\\runtimes\\win\\lib\\net6.0\\System.Management.Automation.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.management.automation\\7.2.24"
     },
     {
@@ -7249,7 +7537,9 @@
         "Id": "System.Net.Http",
         "Version": "4.3.4"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.net.http\\4.3.4\\runtimes\\win\\lib\\netstandard1.3\\System.Net.Http.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.net.http\\4.3.4"
     },
     {
@@ -7258,9 +7548,19 @@
         "Version": "6.0.1"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.net.http.winhttphandler\\6.0.1\\lib\\net6.0\\System.Net.Http.WinHttpHandler.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.net.http.winhttphandler\\6.0.1\\runtimes\\win\\lib\\net6.0\\System.Net.Http.WinHttpHandler.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.net.http.winhttphandler\\6.0.1"
+    },
+    {
+      "Package": {
+        "Id": "System.Net.NameResolution",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Net.NameResolution.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.net.nameresolution\\4.3.0"
     },
     {
       "Package": {
@@ -7307,6 +7607,14 @@
         "C:\\Users\\avs7\\.nuget\\packages\\system.private.servicemodel\\4.9.0\\lib\\netstandard2.0\\System.Private.ServiceModel.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.private.servicemodel\\4.9.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Private.Uri",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.private.uri\\4.3.0"
     },
     {
       "Package": {
@@ -7434,7 +7742,7 @@
         "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.runtime.caching\\6.0.0\\lib\\net6.0\\System.Runtime.Caching.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.runtime.caching\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Runtime.Caching.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.runtime.caching\\6.0.0"
     },
@@ -7478,7 +7786,7 @@
         "Version": "4.3.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0\\lib\\netstandard1.1\\System.Runtime.InteropServices.RuntimeInformation.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0\\runtimes\\win\\lib\\netstandard1.1\\System.Runtime.InteropServices.RuntimeInformation.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0"
     },
@@ -7498,7 +7806,7 @@
         "Version": "6.0.1"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.security.accesscontrol\\6.0.1\\lib\\net6.0\\System.Security.AccessControl.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.security.accesscontrol\\6.0.1\\runtimes\\win\\lib\\net6.0\\System.Security.AccessControl.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.security.accesscontrol\\6.0.1"
     },
@@ -7507,7 +7815,9 @@
         "Id": "System.Security.Cryptography.Algorithms",
         "Version": "4.3.0"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\runtimes\\win\\lib\\netstandard1.6\\System.Security.Cryptography.Algorithms.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0"
     },
     {
@@ -7516,7 +7826,7 @@
         "Version": "4.5.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\lib\\netcoreapp2.1\\System.Security.Cryptography.Cng.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\runtimes\\win\\lib\\netcoreapp2.1\\System.Security.Cryptography.Cng.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0"
     },
@@ -7525,7 +7835,9 @@
         "Id": "System.Security.Cryptography.Csp",
         "Version": "4.3.0"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.csp\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Security.Cryptography.Csp.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.csp\\4.3.0"
     },
     {
@@ -7533,7 +7845,9 @@
         "Id": "System.Security.Cryptography.Encoding",
         "Version": "4.3.0"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Security.Cryptography.Encoding.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0"
     },
     {
@@ -7552,7 +7866,7 @@
         "Version": "6.0.4"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.4\\lib\\net6.0\\System.Security.Cryptography.Pkcs.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.4\\runtimes\\win\\lib\\net6.0\\System.Security.Cryptography.Pkcs.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.4"
     },
@@ -7572,7 +7886,7 @@
         "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\lib\\net6.0\\System.Security.Cryptography.ProtectedData.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Security.Cryptography.ProtectedData.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0"
     },
@@ -7581,7 +7895,9 @@
         "Id": "System.Security.Cryptography.X509Certificates",
         "Version": "4.3.0"
       },
-      "Assemblies": [],
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\runtimes\\win\\lib\\netstandard1.6\\System.Security.Cryptography.X509Certificates.dll"
+      ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0"
     },
     {
@@ -7610,7 +7926,7 @@
         "Version": "5.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\lib\\netstandard2.0\\System.Security.Principal.Windows.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\runtimes\\win\\lib\\netcoreapp2.1\\System.Security.Principal.Windows.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.security.principal.windows\\5.0.0"
     },
@@ -7681,7 +7997,7 @@
         "Version": "6.0.1"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.serviceprocess.servicecontroller\\6.0.1\\lib\\net6.0\\System.ServiceProcess.ServiceController.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.serviceprocess.servicecontroller\\6.0.1\\runtimes\\win\\lib\\net6.0\\System.ServiceProcess.ServiceController.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.serviceprocess.servicecontroller\\6.0.1"
     },
@@ -7691,7 +8007,7 @@
         "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.speech\\6.0.0\\lib\\net6.0\\System.Speech.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.speech\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Speech.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.speech\\6.0.0"
     },
@@ -7709,7 +8025,7 @@
         "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\lib\\net6.0\\System.Text.Encoding.CodePages.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Text.Encoding.CodePages.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0"
     },
@@ -7767,7 +8083,7 @@
         "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.threading.accesscontrol\\6.0.0\\lib\\net6.0\\System.Threading.AccessControl.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.threading.accesscontrol\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Threading.AccessControl.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.threading.accesscontrol\\6.0.0"
     },
@@ -7780,6 +8096,16 @@
         "C:\\Users\\avs7\\.nuget\\packages\\system.threading.channels\\6.0.0\\lib\\net6.0\\System.Threading.Channels.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.threading.channels\\6.0.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Threading.Overlapped",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.threading.overlapped\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Threading.Overlapped.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.threading.overlapped\\4.3.0"
     },
     {
       "Package": {
@@ -7843,7 +8169,7 @@
         "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\system.windows.extensions\\7.0.0\\lib\\net6.0\\System.Windows.Extensions.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\system.windows.extensions\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Windows.Extensions.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.windows.extensions\\7.0.0"
     },

@@ -1,5 +1,6 @@
 {
   "name": "RPA0034_DP_CustomerPortal",
+  "projectId": "a6c15a71-8dde-4571-bb6d-a8d284fec20a",
   "description": "Historical Consultation",
   "main": "Main.xaml",
   "dependencies": {
@@ -27,6 +28,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -61,7 +63,8 @@
         "fileName": "TestCases\\DatabaseManager_TestCase.xaml"
       }
     ],
-    "modernBehavior": true
+    "modernBehavior": true,
+    "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [

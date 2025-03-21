@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UiIimfNkv1S/zeLKoZk7fuODmiwY7TjZhJgIy+1j7OUXsAPjVrSTRuzB1/dE5o/yiVAM/SdxazjjpR7FCvjHvg==",
+  "dgSpecHash": "tJRj+nvOwkwGTMX7peSvZW5JQRO5cw3oVQBtX4t2ejJpmQ8B8MucbPwtZcprlMaOd9ju2mqEyy3jwfrbcZ481A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avs7\\UiPath\\RPA0034_DP_CustomerPortal\\RPA0034_DP_CustomerPortal\\.local\\",
+  "projectFilePath": "C:\\Users\\avs7\\Documents\\34\\RPA0034_DP_CustomerPortal\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\avs7\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\avs7\\.nuget\\packages\\avalonedit\\6.1.3.50\\avalonedit.6.1.3.50.nupkg.sha512",
@@ -303,5 +303,14 @@
     "C:\\Users\\avs7\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\uipath.webapi.runtime.1.18.0.nupkg.sha512",
     "C:\\Users\\avs7\\.nuget\\packages\\xlparser\\1.5.2\\xlparser.1.5.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU3005",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\avs7\\Documents\\34\\RPA0034_DP_CustomerPortal\\.local",
+      "message": "Package 'DocumentFormat.OpenXml 2.16.0' from source 'https://syqgcpdrpaoc.us.equifax.com/nuget/v3/4b43de0a-aff3-4270-91de-d51ef7b655b8/index.json': The package signature file entry is invalid. The central directory header field 'compression method' has an invalid value (8).",
+      "libraryId": "DocumentFormat.OpenXml"
+    }
+  ]
 }

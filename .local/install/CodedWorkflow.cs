@@ -4,6 +4,10 @@ using System.Data;
 using UiPath.CodedWorkflows;
 using UiPath.Core;
 using UiPath.Core.Activities.Storage;
+using UiPath.Excel;
+using UiPath.Excel.Activities;
+using UiPath.Excel.Activities.API;
+using UiPath.Excel.Activities.API.Models;
 using UiPath.Orchestrator.Client.Models;
 using UiPath.Testing;
 using UiPath.Testing.Activities.Api.Models;
@@ -16,14 +20,16 @@ using UiPath.UIAutomationNext.API.Models;
 using UiPath.UIAutomationNext.Enums;
 using UiPath.CodedWorkflows.DescriptorIntegration;
 
-namespace Unattended_Standard_Framework_v2
+namespace RPA0034_DP_CustomerPortal
 {
     public partial class CodedWorkflow : CodedWorkflowBase
     {
         public CodedWorkflow()
         {
-            _ = new System.Type[]{typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService), typeof(UiPath.Testing.API.ITestingService), typeof(UiPath.Core.Activities.API.ISystemService)};
+            _ = new System.Type[]{typeof(UiPath.Excel.Activities.API.IExcelService), typeof(UiPath.Testing.API.ITestingService), typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService), typeof(UiPath.Core.Activities.API.ISystemService)};
         }
+
+        protected UiPath.Excel.Activities.API.IExcelService excel { get => serviceContainer.Resolve<UiPath.Excel.Activities.API.IExcelService>(); }
 
         protected UiPath.Core.Activities.API.ISystemService system { get => serviceContainer.Resolve<UiPath.Core.Activities.API.ISystemService>(); }
 
@@ -33,14 +39,14 @@ namespace Unattended_Standard_Framework_v2
     }
 }
 
-namespace Unattended_Standard_Framework_v2.ObjectRepository
+namespace RPA0034_DP_CustomerPortal.ObjectRepository
 {
     public static class Descriptors
     {
     }
 }
 
-namespace Unattended_Standard_Framework_v2._Implementation
+namespace RPA0034_DP_CustomerPortal._Implementation
 {
     internal class ScreenDescriptorDefinition : IScreenDescriptorDefinition
     {
