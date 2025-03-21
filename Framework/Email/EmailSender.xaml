@@ -84,20 +84,28 @@
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
       <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
       <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
@@ -105,15 +113,6 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>Unattended_Standard_Framework_v2.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="This sequence is going to send an email notification.&#xA;&#xA;Args&#xA;- in_EmailSubject {in} String [Required] // Email Subject Message&#xA;- in_EmailBody {in} String [Required] // Email Body Message&#xA;- in_Attachment {in} String [Required] // Full File Path or String.Empty&#xA;- in_SmtpServer {in} String  [Required] // SMTP Host Name&#xA;- in_SmtpPort {in} Int32 [Required] // SMTP Port&#xA;- in_SenderName {in} String [Required] // Sender Name&#xA;- in_SenderEmail {in} String [Required] // Sender as&#xA;- in_RecipientEmail {in} String [Required] // Receipients&#xA;- in_BccEmail {in} String // BCC&#xA;- in_CcEmail {in} String // CC" DisplayName="EmailSender" sap:VirtualizedContainerService.HintSize="506,2320" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -165,44 +164,20 @@
     <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope - Send Email Notification" sap:VirtualizedContainerService.HintSize="444,371" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:10">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
-          <ui:InvokeCode sap2010:Annotation.AnnotationText="Send a mail notification" Code="MailMessage mail = null;&#xD;&#xA;SmtpClient smtp = null;&#xD;&#xA;out_ErrorMessage = string.Empty;&#xD;&#xA;&#xD;&#xA;try&#xD;&#xA;{&#xD;&#xA;&#x9;mail = new MailMessage();&#xD;&#xA;&#x9;smtp = new SmtpClient( smtpServer, smtpPort );&#xD;&#xA;&#xD;&#xA;&#x9;mail.From = new MailAddress( senderEmail, senderName );&#xD;&#xA;&#x9;mail.To.Add( recipientEmail );&#xD;&#xA;&#x9;mail.Subject = emailSubject;&#xD;&#xA;&#xD;&#xA;&#x9;if( !string.IsNullOrEmpty( ccEmail ) )&#xD;&#xA;&#x9;&#x9;mail.CC.Add( ccEmail );&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;if( !string.IsNullOrEmpty( bccEmail ) )&#xD;&#xA;&#x9;&#x9;mail.Bcc.Add( bccEmail );&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;mail.Body =  emailBody;&#xD;&#xA;&#xD;&#xA;&#x9;mail.IsBodyHtml = true;&#xD;&#xA;&#x9;smtp.EnableSsl = true;&#xD;&#xA;&#xD;&#xA;&#x9;if ( emailBody.Contains(&quot;cid:EquifaxLogo&quot;))&#xD;&#xA;&#x9;{&#xD;&#xA;&#x9;&#x9;mail.Attachments.Add( new Attachment( imgEmail ) );&#xD;&#xA;&#x9;&#x9;mail.Attachments[0].ContentId=&quot;EquifaxLogo&quot;;&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;if ( !string.IsNullOrEmpty( attachmentFilePath ) )&#xD;&#xA;&#x9;&#x9;mail.Attachments.Add( new Attachment( attachmentFilePath ) );&#xD;&#xA;&#xD;&#xA;&#x9;smtp.Send( mail );&#x9;&#xD;&#xA;}&#xD;&#xA;catch(Exception e)&#xD;&#xA;{&#xD;&#xA;&#x9;out_ErrorMessage = e.Message;&#xD;&#xA;&#x9;if (e.InnerException != null)&#xD;&#xA;&#x9;&#x9;out_ErrorMessage = out_ErrorMessage + e.InnerException.Message;&#x9;&#x9;&#x9;&#xD;&#xA;}&#xD;&#xA;finally&#xD;&#xA;{&#xD;&#xA;&#x9;if (mail != null)&#xD;&#xA;&#x9;&#x9;mail.Dispose();&#xD;&#xA;    &#xD;&#xA;    if (smtp != null)&#xD;&#xA;        smtp.Dispose();    &#xD;&#xA;}" ContinueOnError="False" DisplayName="Invoke Code - Send Email Notification" sap:VirtualizedContainerService.HintSize="334,196" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+          <ui:InvokeCode sap2010:Annotation.AnnotationText="Send a mail notification" Code="MailMessage mail = null;&#xA;SmtpClient smtp = null;&#xA;out_ErrorMessage = string.Empty;&#xA;&#xA;try&#xA;{&#xA;&#x9;mail = new MailMessage();&#xA;&#x9;smtp = new SmtpClient( smtpServer, smtpPort );&#xA;&#xA;&#x9;mail.From = new MailAddress( senderEmail, senderName );&#xA;&#x9;mail.To.Add( recipientEmail );&#xA;&#x9;mail.Subject = emailSubject;&#xA;&#xA;&#x9;if( !string.IsNullOrEmpty( ccEmail ) )&#xA;&#x9;&#x9;mail.CC.Add( ccEmail );&#xA;&#x9;&#xA;&#x9;if( !string.IsNullOrEmpty( bccEmail ) )&#xA;&#x9;&#x9;mail.Bcc.Add( bccEmail );&#xA;&#x9;&#xA;&#x9;mail.Body =  emailBody;&#xA;&#xA;&#x9;mail.IsBodyHtml = true;&#xA;&#x9;smtp.EnableSsl = true;&#xA;&#xA;&#x9;if ( emailBody.Contains(&quot;cid:EquifaxLogo&quot;))&#xA;&#x9;{&#xA;&#x9;&#x9;mail.Attachments.Add( new Attachment( imgEmail ) );&#xA;&#x9;&#x9;mail.Attachments[0].ContentId=&quot;EquifaxLogo&quot;;&#xA;&#x9;}&#xA;&#xA;&#x9;if ( !string.IsNullOrEmpty( attachmentFilePath ) )&#xA;&#x9;&#x9;mail.Attachments.Add( new Attachment( attachmentFilePath ) );&#xA;&#xA;&#x9;smtp.Send( mail );&#x9;&#xA;}&#xA;catch(Exception e)&#xA;{&#xA;&#x9;out_ErrorMessage = e.Message;&#xA;&#x9;if (e.InnerException != null)&#xA;&#x9;&#x9;out_ErrorMessage = out_ErrorMessage + e.InnerException.Message;&#x9;&#x9;&#x9;&#xA;}&#xA;finally&#xA;{&#xA;&#x9;if (mail != null)&#xA;&#x9;&#x9;mail.Dispose();&#xA;    &#xA;    if (smtp != null)&#xA;        smtp.Dispose();    &#xA;}" ContinueOnError="False" DisplayName="Invoke Code - Send Email Notification" sap:VirtualizedContainerService.HintSize="334,196" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
             <ui:InvokeCode.Arguments>
-              <InArgument x:TypeArguments="x:Int32" x:Key="smtpPort">
-                <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="in_SmtpPort" />
-              </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="smtpServer">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_SmtpServer.Trim" />
-              </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="emailSubject">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_EmailSubject.Trim" />
-              </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="emailBody">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_EmailBody.Trim" />
-              </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="senderName">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_SenderName.Trim" />
-              </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="imgEmail">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="ImgLogo.Trim" />
-              </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="senderEmail">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_SenderEmail.Trim" />
-              </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="recipientEmail">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_RecipientEmail.Trim" />
-              </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="attachmentFilePath">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Attachment.Trim" />
-              </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="bccEmail">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_BccEmail.Trim" />
-              </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="ccEmail">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_CcEmail.Trim" />
-              </InArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="out_ErrorMessage">
-                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="ErrorMessage" />
-              </OutArgument>
+              <InArgument x:TypeArguments="x:Int32" x:Key="smtpPort">[in_SmtpPort]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="smtpServer">[in_SmtpServer.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="emailSubject">[in_EmailSubject.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="emailBody">[in_EmailBody.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="senderName">[in_SenderName.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="imgEmail">[ImgLogo.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="senderEmail">[in_SenderEmail.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="recipientEmail">[in_RecipientEmail.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="attachmentFilePath">[in_Attachment.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="bccEmail">[in_BccEmail.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="ccEmail">[in_CcEmail.Trim]</InArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="out_ErrorMessage">[ErrorMessage]</OutArgument>
             </ui:InvokeCode.Arguments>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">

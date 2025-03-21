@@ -20,11 +20,12 @@
 		{			
 			"analyticsUseCaseName":"----EDIT FIELD ---",
 			"projectName":"RPA0034_DP_CustomerPortal",
-			"processId":"",			
+			"processId":"231",			
 			"queueNamePerformer":"Performer_0034_CustomerPortal",
 			"queueNameDispatcher":"Dispatcher_0034_CustomerPortal",			
 			"emailPort":"",
-			"emailServer":"",					
+			"emailServer":"",
+			"portalUrl":"",					
 			"logLastModByVar":"",			
 			"isAPI":"False", 			
 			"connectionStringDB":"",						
@@ -68,7 +69,11 @@
 			"transactionID":"",
 			"batId":"",
 			"startDateTime":"",
-			"openAppRequired":"True"
+			"openAppRequired":"True",
+			"document":"",
+			"client":"",
+			"operator":"",
+			"complement":""
 		}
 	]	
 }

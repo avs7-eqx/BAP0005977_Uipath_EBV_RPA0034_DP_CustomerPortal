@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1162,972</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>680,972</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>INIT_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -40,6 +40,7 @@
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Security</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -82,9 +83,10 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsFormsIntegration</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap2010:Annotation.AnnotationText="Read configuration json file, read assets, read queries and create necessary dictionaries for this RPA framework.&#xD;&#xA;&#xD;&#xA;Args&#xD;&#xA;- out_DefaultConfiguration {out} Dictionary (Of Sting, String) // Dictionary with default values.&#xA;- out_ErrorHandling {out} Dictionary (Of Sting, String) // Dictionary with error values.&#xA;- out_PerformerConfiguration{out} Dictionary (Of Sting, String) // Dictionary with the project values.&#xA;- out_DispatcherConfiguration{out} Dictionary (Of Sting, String) // Dictionary with the project values." DisplayName="INIT_Main" sap:VirtualizedContainerService.HintSize="634,907" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap2010:Annotation.AnnotationText="Read configuration json file, read assets, read queries and create necessary dictionaries for this RPA framework.&#xA;&#xA;Args&#xA;- out_DefaultConfiguration {out} Dictionary (Of Sting, String) // Dictionary with default values.&#xA;- out_ErrorHandling {out} Dictionary (Of Sting, String) // Dictionary with error values.&#xA;- out_PerformerConfiguration{out} Dictionary (Of Sting, String) // Dictionary with the project values.&#xA;- out_DispatcherConfiguration{out} Dictionary (Of Sting, String) // Dictionary with the project values." DisplayName="INIT_Main" sap:VirtualizedContainerService.HintSize="634,907" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -148,7 +150,7 @@
                   <av:Size x:Key="ShapeSize">200,109</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Pre set of the Configuration variables to be used in the project." DisplayName="PreSetConfigurationVariables.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,155" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Framework\INIT\PreSetConfigurationVariables.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Pre set of the Configuration variables to be used in the project." DisplayName="PreSetConfigurationVariables.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,109" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Framework\INIT\PreSetConfigurationVariables.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="io_DefaultConfiguration">[out_DefaultConfiguration]</InOutArgument>
                   <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="io_ErrorHandling">[out_ErrorHandling]</InOutArgument>

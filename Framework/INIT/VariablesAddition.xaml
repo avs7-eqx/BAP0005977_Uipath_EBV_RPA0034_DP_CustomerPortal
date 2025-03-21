@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>680,1408</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>680,1574</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>VariablesAddition_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -86,17 +86,19 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This sequence is going to be use to set up any variables configuration(Assets and Queries) for the bot.&#xA;&#xA;Args&#xA;- io_DefaultConfiguration  {in/out}  Dictionary (Of Sting, String) // Dictionary with default values." DisplayName="VariablesAddition" sap:VirtualizedContainerService.HintSize="450,1343" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This sequence is going to be use to set up any variables configuration(Assets and Queries) for the bot.&#xA;&#xA;Args&#xA;- io_DefaultConfiguration  {in/out}  Dictionary (Of Sting, String) // Dictionary with default values." DisplayName="VariablesAddition" sap:VirtualizedContainerService.HintSize="450,1509" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Start" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Variables addition sequence started...&quot;]" />
-    <ui:GetRobotAsset AssetName="emailPort" CacheStrategy="None" DisplayName="Get Asset emailPort" FolderPath="BVS/Dev" sap:VirtualizedContainerService.HintSize="388,144" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+    <ui:LogMessage DisplayName="Start" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Variables addition sequence started...&quot;]" />
+    <ui:GetRobotAsset AssetName="emailPort" CacheStrategy="None" DisplayName="Get Asset emailPort" FolderPath="BVS/Dev" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
       <ui:GetRobotAsset.TimeoutMS>
         <InArgument x:TypeArguments="x:Int32" />
       </ui:GetRobotAsset.TimeoutMS>
@@ -104,7 +106,7 @@
         <OutArgument x:TypeArguments="x:String">[io_DefaultConfiguration("emailPort")]</OutArgument>
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
-    <ui:GetRobotAsset AssetName="emailServer" CacheStrategy="None" DisplayName="Get Asset emailServer" sap:VirtualizedContainerService.HintSize="388,144" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+    <ui:GetRobotAsset AssetName="emailServer" CacheStrategy="None" DisplayName="Get Asset emailServer" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
       <ui:GetRobotAsset.TimeoutMS>
         <InArgument x:TypeArguments="x:Int32" />
       </ui:GetRobotAsset.TimeoutMS>
@@ -112,12 +114,17 @@
         <OutArgument x:TypeArguments="x:String">[io_DefaultConfiguration("emailServer")]</OutArgument>
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
-    <If Condition="[Boolean.Parse(io_DefaultConfiguration(&quot;isAPI&quot;).ToString.Trim)]" DisplayName="API?" sap:VirtualizedContainerService.HintSize="388,573" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="EBV Transactional Portal" CacheStrategy="None" DisplayName="Get Asset" FolderPath="BVS/Dev" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[io_DefaultConfiguration("portalUrl")]</OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <If Condition="[Boolean.Parse(io_DefaultConfiguration(&quot;isAPI&quot;).ToString.Trim)]" DisplayName="API?" sap:VirtualizedContainerService.HintSize="388,566" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <c:Create_Connenection_String_API DisplayName="Create DB Connection String API" sap:VirtualizedContainerService.HintSize="334,195" sap2010:WorkflowViewState.IdRef="Create_Connenection_String_API_1" in_ApiDbCredAssetName="[io_DefaultConfiguration(&quot;credentialApiOrchDBConnection&quot;).ToString.Trim]" in_ApiDbEndPointAssetName="[io_DefaultConfiguration(&quot;endpointOrchDBConnection&quot;).ToString.Trim]" out_ConnectionString="[io_DefaultConfiguration(&quot;connectionStringDB&quot;)]" />
+        <c:Create_Connenection_String_API DisplayName="Create DB Connection String API" sap:VirtualizedContainerService.HintSize="334,192" sap2010:WorkflowViewState.IdRef="Create_Connenection_String_API_1" in_ApiDbCredAssetName="[io_DefaultConfiguration(&quot;credentialApiOrchDBConnection&quot;).ToString.Trim]" in_ApiDbEndPointAssetName="[io_DefaultConfiguration(&quot;endpointOrchDBConnection&quot;).ToString.Trim]" out_ConnectionString="[io_DefaultConfiguration(&quot;connectionStringDB&quot;)]" />
       </If.Then>
       <If.Else>
-        <c:Create_Connection_String DisplayName="Create DB Connection String" sap:VirtualizedContainerService.HintSize="334,195" sap2010:WorkflowViewState.IdRef="Create_Connection_String_1" in_ConnectionStringAssetName="[io_DefaultConfiguration(&quot;stringOrchDBConnection&quot;).ToString.Trim]" in_CredentialAssetName="[io_DefaultConfiguration(&quot;credentialOrchDBConnection&quot;).ToString.Trim]" out_ConnectionString="[io_DefaultConfiguration(&quot;connectionStringDB&quot;)]" />
+        <c:Create_Connection_String DisplayName="Create DB Connection String" sap:VirtualizedContainerService.HintSize="334,192" sap2010:WorkflowViewState.IdRef="Create_Connection_String_1" in_ConnectionStringAssetName="[io_DefaultConfiguration(&quot;stringOrchDBConnection&quot;).ToString.Trim]" in_CredentialAssetName="[io_DefaultConfiguration(&quot;credentialOrchDBConnection&quot;).ToString.Trim]" out_ConnectionString="[io_DefaultConfiguration(&quot;connectionStringDB&quot;)]" />
       </If.Else>
     </If>
   </Sequence>
