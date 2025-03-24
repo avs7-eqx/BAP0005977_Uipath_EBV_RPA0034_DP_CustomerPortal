@@ -1,16 +1,10 @@
-Tipo do relatório;CPF/CNPJ;Nr do documento;Complemento de nome para arquivo PDF;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CPF;22315547806;02470200;
-Todo o Mercado;CNPJ;12345678901234;02470200200;
+Cliente;CLIENTE X;;
+Operador;AC123456;;
+Preenchido pelo cliente;;;
+Tipo do relatório;CPF/CNPJ;Nr do documento;Complemento de nome para arquivo PDF
+Todo o Mercado;CPF;22315547806;02470201
+Todo o Mercado;CPF;22315547806;02470202
+Todo o Mercado;CPF;22315547806;02470203
+Todo o Mercado;CPF;22315547806;02470204
+Todo o Mercado;CPF;12345678901;02470205
+Todo o Mercado;CNPJ;12345678901234;02470200200
