@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1504,2258</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1504,2218</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="29">
@@ -432,7 +432,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <TryCatch.Try>
-                              <Sequence DisplayName="Sequence - Get Transaction" sap:VirtualizedContainerService.HintSize="654,1542" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                              <Sequence DisplayName="Sequence - Get Transaction" sap:VirtualizedContainerService.HintSize="654,1635" sap2010:WorkflowViewState.IdRef="Sequence_4">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="sd:DataTable" Name="dt_Transaction" />
                                 </Sequence.Variables>
@@ -477,12 +477,12 @@
                                     <OutArgument x:TypeArguments="x:String" x:Key="out_startDateTime">[in_PerformerConfiguration("startDateTime")]</OutArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
-                                <ui:IfElseIf sap2010:Annotation.AnnotationText="Checks if the datatable contains results from previous steps." DisplayName="Check if there are results" sap:VirtualizedContainerService.HintSize="592,1059" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                                <ui:IfElseIf sap2010:Annotation.AnnotationText="Checks if the datatable contains results from previous steps." DisplayName="Check if there are results" sap:VirtualizedContainerService.HintSize="592,1152" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                                   <ui:IfElseIf.ConditionBlocks>
                                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                       <ui:IfElseIfBlock BlockType="If" Condition="[dt_Transaction.RowCount &gt; 0 and Not CurrentTransaction is Nothing]" DisplayName="Transaction found" sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="Start Transaccion" sap:VirtualizedContainerService.HintSize="541,616" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                          <Sequence DisplayName="Start Transaccion" sap:VirtualizedContainerService.HintSize="541,709" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -490,15 +490,15 @@
                                             </sap:WorkflowViewStateService.ViewState>
                                             <ui:LogMessage DisplayName="Log Message - Start Transaction" sap:VirtualizedContainerService.HintSize="479,141" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Starting Transaction: &quot; + CurrentTransaction.Reference.Trim + &quot;...&quot;]" />
                                             <ui:Comment DisplayName="Comment - Flags" sap:VirtualizedContainerService.HintSize="479,75" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// Use a multiple assign activity to fill up the in Project Specific Config dictionary if needed" />
-                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,209" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,302" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
                                               <ui:MultipleAssign.AssignOperations>
-                                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_36">
+                                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                                  <ui:AssignOperation sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="AssignOperation_36">
                                                     <ui:AssignOperation.To>
                                                       <OutArgument x:TypeArguments="x:String">[in_PerformerConfiguration("document")]</OutArgument>
                                                     </ui:AssignOperation.To>
                                                     <ui:AssignOperation.Value>
-                                                      <InArgument x:TypeArguments="x:String">[CurrentTransaction.SpecificContent("Documento").ToString]</InArgument>
+                                                      <InArgument x:TypeArguments="x:String">[dt_Transaction.Rows(0).Item("INP_FIELD_3").ToString]</InArgument>
                                                     </ui:AssignOperation.Value>
                                                   </ui:AssignOperation>
                                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_37">
@@ -506,7 +506,7 @@
                                                       <OutArgument x:TypeArguments="x:String">[in_PerformerConfiguration("operator")]</OutArgument>
                                                     </ui:AssignOperation.To>
                                                     <ui:AssignOperation.Value>
-                                                      <InArgument x:TypeArguments="x:String">[CurrentTransaction.SpecificContent("Operador").ToString]</InArgument>
+                                                      <InArgument x:TypeArguments="x:String">[dt_Transaction.Rows(0).Item("INP_FIELD_6").ToString]</InArgument>
                                                     </ui:AssignOperation.Value>
                                                   </ui:AssignOperation>
                                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_38">
@@ -514,7 +514,7 @@
                                                       <OutArgument x:TypeArguments="x:String">[in_PerformerConfiguration("client")]</OutArgument>
                                                     </ui:AssignOperation.To>
                                                     <ui:AssignOperation.Value>
-                                                      <InArgument x:TypeArguments="x:String">[CurrentTransaction.SpecificContent("Cliente").ToString]</InArgument>
+                                                      <InArgument x:TypeArguments="x:String">[dt_Transaction.Rows(0).Item("INP_FIELD_5").ToString]</InArgument>
                                                     </ui:AssignOperation.Value>
                                                   </ui:AssignOperation>
                                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_39">
@@ -522,7 +522,31 @@
                                                       <OutArgument x:TypeArguments="x:String">[in_PerformerConfiguration("complement")]</OutArgument>
                                                     </ui:AssignOperation.To>
                                                     <ui:AssignOperation.Value>
-                                                      <InArgument x:TypeArguments="x:String">[CurrentTransaction.SpecificContent("Complemento_do_nome").ToString]</InArgument>
+                                                      <InArgument x:TypeArguments="x:String">[dt_Transaction.Rows(0).Item("INP_FIELD_4").ToString]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_40">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[in_PerformerConfiguration("documentType")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[dt_Transaction.Rows(0).Item("INP_FIELD_2").ToString]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_41">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[in_PerformerConfiguration("typeReport")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[dt_Transaction.Rows(0).Item("INP_FIELD_1").ToString]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_42">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[in_PerformerConfiguration("inputId")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[dt_Transaction.Rows(0).Item("INP_ID").ToString]</InArgument>
                                                     </ui:AssignOperation.Value>
                                                   </ui:AssignOperation>
                                                 </scg:List>

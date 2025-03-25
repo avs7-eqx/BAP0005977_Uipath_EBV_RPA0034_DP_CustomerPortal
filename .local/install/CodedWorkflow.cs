@@ -8,6 +8,8 @@ using UiPath.Excel;
 using UiPath.Excel.Activities;
 using UiPath.Excel.Activities.API;
 using UiPath.Excel.Activities.API.Models;
+using UiPath.GoogleCloud.Core;
+using UiPath.GoogleCloud.Models;
 using UiPath.Orchestrator.Client.Models;
 using UiPath.Testing;
 using UiPath.Testing.Activities.Api.Models;
@@ -26,10 +28,12 @@ namespace RPA0034_DP_CustomerPortal
     {
         public CodedWorkflow()
         {
-            _ = new System.Type[]{typeof(UiPath.Core.Activities.API.ISystemService), typeof(UiPath.Excel.Activities.API.IExcelService), typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService), typeof(UiPath.Testing.API.ITestingService)};
+            _ = new System.Type[]{typeof(UiPath.Testing.API.ITestingService), typeof(UiPath.Core.Activities.API.ISystemService), typeof(UiPath.Excel.Activities.API.IExcelService), typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService), typeof(UiPath.GoogleCloud.Activities.API.IGoogleCloudService)};
         }
 
         protected UiPath.Excel.Activities.API.IExcelService excel { get => serviceContainer.Resolve<UiPath.Excel.Activities.API.IExcelService>(); }
+
+        protected UiPath.GoogleCloud.Activities.API.IGoogleCloudService gcp { get => serviceContainer.Resolve<UiPath.GoogleCloud.Activities.API.IGoogleCloudService>(); }
 
         protected UiPath.Core.Activities.API.ISystemService system { get => serviceContainer.Resolve<UiPath.Core.Activities.API.ISystemService>(); }
 

@@ -21,7 +21,7 @@
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
-        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll",
@@ -126,7 +126,7 @@
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
-        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll",
@@ -258,7 +258,7 @@
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
-        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll",
@@ -355,7 +355,7 @@
       "Assemblies": [
         "C:\\Users\\avs7\\.nuget\\packages\\azure.core\\1.38.0\\lib/net6.0/Azure.Core.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\azure.identity\\1.11.4\\lib/netstandard2.0/Azure.Identity.dll",
-        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.1\\runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.identity.client\\4.62.0\\lib/net6.0/Microsoft.Identity.Client.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.61.3\\lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll",
@@ -444,7 +444,7 @@
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
-        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll",
@@ -559,7 +559,7 @@
         "C:\\Users\\avs7\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\nlog\\4.7.15\\lib/netstandard2.0/NLog.dll",
-        "C:\\Users\\avs7\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\polly\\7.2.2\\lib/netstandard2.0/Polly.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\uipath\\24.10.113.9929\\lib/net6.0-windows7.0/SapAutomationConnectivitySdk.dll",
         "C:\\Users\\avs7\\.nuget\\packages\\uipath\\24.10.113.9929\\lib/net6.0-windows7.0/SapAutomationLogger.dll",
@@ -662,6 +662,58 @@
         "C:\\Users\\avs7\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib/net6.0-windows7.0/UiPath.Web.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.GoogleCloud.Activities",
+        "Version": "2.4.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\google.api.commonprotos\\2.5.0\\lib/netstandard2.0/Google.Api.CommonProtos.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.api.gax\\3.7.0\\lib/netstandard2.0/Google.Api.Gax.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.api.gax.grpc\\3.7.0\\lib/netstandard2.0/Google.Api.Gax.Grpc.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.api.gax.grpc.grpccore\\3.7.0\\lib/netstandard2.0/Google.Api.Gax.Grpc.GrpcCore.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.api.gax.rest\\3.3.0\\lib/netstandard2.0/Google.Api.Gax.Rest.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.apis\\1.55.0\\lib/netstandard2.0/Google.Apis.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.apis.compute.v1\\1.55.0.2441\\lib/netstandard2.0/Google.Apis.Compute.v1.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.apis.core\\1.55.0\\lib/netstandard2.0/Google.Apis.Core.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.apis.iam.v1\\1.55.0.2428\\lib/netstandard2.0/Google.Apis.Iam.v1.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.apis.storage.v1\\1.51.0.2234\\lib/netstandard2.0/Google.Apis.Storage.v1.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.iam.v1\\2.4.0\\lib/netstandard2.0/Google.Cloud.Iam.V1.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.resourcemanager.v3\\1.1.0\\lib/netstandard2.0/Google.Cloud.ResourceManager.V3.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.secretmanager.v1\\1.7.0\\lib/netstandard2.0/Google.Cloud.SecretManager.V1.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.storage.v1\\3.5.0\\lib/netstandard2.0/Google.Cloud.Storage.V1.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.longrunning\\2.2.0\\lib/netstandard2.0/Google.LongRunning.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\google.protobuf\\3.18.0\\lib/net5.0/Google.Protobuf.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\grpc.auth\\2.41.0\\lib/netstandard2.0/Grpc.Auth.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\grpc.core\\2.41.0\\lib/netstandard2.0/Grpc.Core.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\grpc.core.api\\2.41.0\\lib/netstandard2.0/Grpc.Core.Api.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0\\lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.2\\lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.options\\6.0.1\\lib/netstandard2.1/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.1\\lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\polly\\7.2.2\\lib/netstandard2.0/Polly.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\polly.contrib.waitandretry\\1.1.1\\lib/netstandard2.0/Polly.Contrib.WaitAndRetry.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\system.runtime.caching\\6.0.0\\runtimes/win/lib/net6.0/System.Runtime.Caching.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.connectionclient\\2.0.7\\lib/net6.0/ConnectionClient.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.googlecloud.activities\\2.4.1\\lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.API.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.googlecloud.activities\\2.4.1\\lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.Design.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.googlecloud.activities\\2.4.1\\lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.googlecloud.activities\\2.4.1\\lib/net6.0-windows7.0/UiPath.GoogleCloud.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.platform\\24.11.1\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib/netstandard2.0/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\uipath.googlecloud.activities\\2.4.1"
     }
   ],
   "Conflicts": [],
@@ -919,6 +971,20 @@
         }
       ]
     },
+    "Google.Api.Gax.Rest": {
+      "Id": "Google.Api.Gax.Rest",
+      "Version": "3.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Google.Api.Gax",
+          "Item2": "[3.3.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.48.0, 2.0.0)"
+        }
+      ]
+    },
     "Google.Apis": {
       "Id": "Google.Apis",
       "Version": "1.55.0",
@@ -943,6 +1009,20 @@
         }
       ]
     },
+    "Google.Apis.Compute.v1": {
+      "Id": "Google.Apis.Compute.v1",
+      "Version": "1.55.0.2441",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.55.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.55.0, )"
+        }
+      ]
+    },
     "Google.Apis.Core": {
       "Id": "Google.Apis.Core",
       "Version": "1.55.0",
@@ -950,6 +1030,34 @@
         {
           "Item1": "Newtonsoft.Json",
           "Item2": "[13.0.1, )"
+        }
+      ]
+    },
+    "Google.Apis.Iam.v1": {
+      "Id": "Google.Apis.Iam.v1",
+      "Version": "1.55.0.2428",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.55.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.55.0, )"
+        }
+      ]
+    },
+    "Google.Apis.Storage.v1": {
+      "Id": "Google.Apis.Storage.v1",
+      "Version": "1.51.0.2234",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.51.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.51.0, )"
         }
       ]
     },
@@ -982,6 +1090,74 @@
         {
           "Item1": "Grpc.Core",
           "Item2": "[2.41.0, 3.0.0)"
+        }
+      ]
+    },
+    "Google.Cloud.ResourceManager.V3": {
+      "Id": "Google.Cloud.ResourceManager.V3",
+      "Version": "1.1.0",
+      "Dependencies": [
+        {
+          "Item1": "Google.Api.Gax.Grpc.GrpcCore",
+          "Item2": "[3.5.0, 4.0.0)"
+        },
+        {
+          "Item1": "Google.Cloud.Iam.V1",
+          "Item2": "[2.2.0, 3.0.0)"
+        },
+        {
+          "Item1": "Google.LongRunning",
+          "Item2": "[2.2.0, 3.0.0)"
+        },
+        {
+          "Item1": "Grpc.Core",
+          "Item2": "[2.38.1, 3.0.0)"
+        }
+      ]
+    },
+    "Google.Cloud.SecretManager.V1": {
+      "Id": "Google.Cloud.SecretManager.V1",
+      "Version": "1.7.0",
+      "Dependencies": [
+        {
+          "Item1": "Google.Api.Gax.Grpc.GrpcCore",
+          "Item2": "[3.5.0, 4.0.0)"
+        },
+        {
+          "Item1": "Google.Cloud.Iam.V1",
+          "Item2": "[2.2.0, 3.0.0)"
+        },
+        {
+          "Item1": "Grpc.Core",
+          "Item2": "[2.38.1, 3.0.0)"
+        }
+      ]
+    },
+    "Google.Cloud.Storage.V1": {
+      "Id": "Google.Cloud.Storage.V1",
+      "Version": "3.5.0",
+      "Dependencies": [
+        {
+          "Item1": "Google.Api.Gax.Rest",
+          "Item2": "[3.3.0, 4.0.0)"
+        },
+        {
+          "Item1": "Google.Apis.Storage.v1",
+          "Item2": "[1.51.0.2234, 2.0.0)"
+        }
+      ]
+    },
+    "Google.LongRunning": {
+      "Id": "Google.LongRunning",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Google.Api.Gax.Grpc.GrpcCore",
+          "Item2": "[3.3.0, 4.0.0)"
+        },
+        {
+          "Item1": "Grpc.Core",
+          "Item2": "[2.36.4, 3.0.0)"
         }
       ]
     },
@@ -1231,7 +1407,7 @@
     },
     "Microsoft.Bcl.AsyncInterfaces": {
       "Id": "Microsoft.Bcl.AsyncInterfaces",
-      "Version": "5.0.0",
+      "Version": "7.0.0",
       "Dependencies": []
     },
     "Microsoft.CodeAnalysis.Analyzers": {
@@ -1340,6 +1516,42 @@
       "Id": "Microsoft.Data.SqlClient.SNI.runtime",
       "Version": "5.2.0",
       "Dependencies": []
+    },
+    "Microsoft.Extensions.Caching.Abstractions": {
+      "Id": "Microsoft.Extensions.Caching.Abstractions",
+      "Version": "6.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[6.0.0, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Caching.Memory": {
+      "Id": "Microsoft.Extensions.Caching.Memory",
+      "Version": "6.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Caching.Abstractions",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[6.0.0, )"
+        }
+      ]
     },
     "Microsoft.Extensions.DependencyInjection": {
       "Id": "Microsoft.Extensions.DependencyInjection",
@@ -2311,7 +2523,12 @@
     },
     "Polly": {
       "Id": "Polly",
-      "Version": "7.1.0",
+      "Version": "7.2.2",
+      "Dependencies": []
+    },
+    "Polly.Contrib.WaitAndRetry": {
+      "Id": "Polly.Contrib.WaitAndRetry",
+      "Version": "1.1.1",
       "Dependencies": []
     },
     "Portable.BouncyCastle": {
@@ -2716,6 +2933,11 @@
         }
       ]
     },
+    "System.ComponentModel.Annotations": {
+      "Id": "System.ComponentModel.Annotations",
+      "Version": "5.0.0",
+      "Dependencies": []
+    },
     "System.ComponentModel.Composition": {
       "Id": "System.ComponentModel.Composition",
       "Version": "6.0.0",
@@ -2774,6 +2996,11 @@
           "Item2": "[4.3.0, )"
         }
       ]
+    },
+    "System.Data.DataSetExtensions": {
+      "Id": "System.Data.DataSetExtensions",
+      "Version": "4.5.0",
+      "Dependencies": []
     },
     "System.Data.Odbc": {
       "Id": "System.Data.Odbc",
@@ -4897,6 +5124,20 @@
         }
       ]
     },
+    "UiPath.ConnectionClient": {
+      "Id": "UiPath.ConnectionClient",
+      "Version": "2.0.7",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.3, )"
+        },
+        {
+          "Item1": "System.Runtime.Caching",
+          "Item2": "[6.0.0, )"
+        }
+      ]
+    },
     "UiPath.Database.Activities": {
       "Id": "UiPath.Database.Activities",
       "Version": "1.9.0",
@@ -5020,6 +5261,88 @@
         {
           "Item1": "UiPath.Telemetry.Client",
           "Item2": "[2.1.3, )"
+        }
+      ]
+    },
+    "UiPath.GoogleCloud.Activities": {
+      "Id": "UiPath.GoogleCloud.Activities",
+      "Version": "2.4.1",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.55.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Compute.v1",
+          "Item2": "[1.55.0.2441, )"
+        },
+        {
+          "Item1": "Google.Apis.Iam.v1",
+          "Item2": "[1.55.0.2428, )"
+        },
+        {
+          "Item1": "Google.Cloud.ResourceManager.V3",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "Google.Cloud.SecretManager.V1",
+          "Item2": "[1.7.0, )"
+        },
+        {
+          "Item1": "Google.Cloud.Storage.V1",
+          "Item2": "[3.5.0, )"
+        },
+        {
+          "Item1": "Microsoft.Bcl.AsyncInterfaces",
+          "Item2": "[7.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Caching.Abstractions",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Caching.Memory",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "Polly",
+          "Item2": "[7.2.2, )"
+        },
+        {
+          "Item1": "Polly.Contrib.WaitAndRetry",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "System.ComponentModel.Annotations",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.Data.DataSetExtensions",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[5.0.2, )"
+        },
+        {
+          "Item1": "UiPath.CodedWorkflows",
+          "Item2": "[24.4.2, )"
+        },
+        {
+          "Item1": "UiPath.ConnectionClient",
+          "Item2": "[2.0.7, )"
+        },
+        {
+          "Item1": "UiPath.Platform",
+          "Item2": "[23.4.0, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.5.3, )"
         }
       ]
     },
@@ -5721,6 +6044,16 @@
     },
     {
       "Package": {
+        "Id": "Google.Api.Gax.Rest",
+        "Version": "3.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\google.api.gax.rest\\3.3.0\\lib\\netstandard2.0\\Google.Api.Gax.Rest.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\google.api.gax.rest\\3.3.0"
+    },
+    {
+      "Package": {
         "Id": "Google.Apis",
         "Version": "1.55.0"
       },
@@ -5742,6 +6075,16 @@
     },
     {
       "Package": {
+        "Id": "Google.Apis.Compute.v1",
+        "Version": "1.55.0.2441"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\google.apis.compute.v1\\1.55.0.2441\\lib\\netstandard2.0\\Google.Apis.Compute.v1.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\google.apis.compute.v1\\1.55.0.2441"
+    },
+    {
+      "Package": {
         "Id": "Google.Apis.Core",
         "Version": "1.55.0"
       },
@@ -5749,6 +6092,26 @@
         "C:\\Users\\avs7\\.nuget\\packages\\google.apis.core\\1.55.0\\lib\\netstandard2.0\\Google.Apis.Core.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\google.apis.core\\1.55.0"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis.Iam.v1",
+        "Version": "1.55.0.2428"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\google.apis.iam.v1\\1.55.0.2428\\lib\\netstandard2.0\\Google.Apis.Iam.v1.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\google.apis.iam.v1\\1.55.0.2428"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis.Storage.v1",
+        "Version": "1.51.0.2234"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\google.apis.storage.v1\\1.51.0.2234\\lib\\netstandard2.0\\Google.Apis.Storage.v1.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\google.apis.storage.v1\\1.51.0.2234"
     },
     {
       "Package": {
@@ -5769,6 +6132,46 @@
         "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.pubsub.v1\\2.10.0\\lib\\netstandard2.0\\Google.Cloud.PubSub.V1.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.pubsub.v1\\2.10.0"
+    },
+    {
+      "Package": {
+        "Id": "Google.Cloud.ResourceManager.V3",
+        "Version": "1.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.resourcemanager.v3\\1.1.0\\lib\\netstandard2.0\\Google.Cloud.ResourceManager.V3.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.resourcemanager.v3\\1.1.0"
+    },
+    {
+      "Package": {
+        "Id": "Google.Cloud.SecretManager.V1",
+        "Version": "1.7.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.secretmanager.v1\\1.7.0\\lib\\netstandard2.0\\Google.Cloud.SecretManager.V1.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.secretmanager.v1\\1.7.0"
+    },
+    {
+      "Package": {
+        "Id": "Google.Cloud.Storage.V1",
+        "Version": "3.5.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.storage.v1\\3.5.0\\lib\\netstandard2.0\\Google.Cloud.Storage.V1.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\google.cloud.storage.v1\\3.5.0"
+    },
+    {
+      "Package": {
+        "Id": "Google.LongRunning",
+        "Version": "2.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\google.longrunning\\2.2.0\\lib\\netstandard2.0\\Google.LongRunning.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\google.longrunning\\2.2.0"
     },
     {
       "Package": {
@@ -5952,12 +6355,12 @@
     {
       "Package": {
         "Id": "Microsoft.Bcl.AsyncInterfaces",
-        "Version": "5.0.0"
+        "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib\\netstandard2.1\\Microsoft.Bcl.AsyncInterfaces.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\lib\\netstandard2.1\\Microsoft.Bcl.AsyncInterfaces.dll"
       ],
-      "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0"
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0"
     },
     {
       "Package": {
@@ -6024,6 +6427,26 @@
       },
       "Assemblies": [],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.2.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Caching.Abstractions",
+        "Version": "6.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\lib\\netstandard2.0\\Microsoft.Extensions.Caching.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Caching.Memory",
+        "Version": "6.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0\\lib\\netstandard2.0\\Microsoft.Extensions.Caching.Memory.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0"
     },
     {
       "Package": {
@@ -6528,12 +6951,22 @@
     {
       "Package": {
         "Id": "Polly",
-        "Version": "7.1.0"
+        "Version": "7.2.2"
       },
       "Assemblies": [
-        "C:\\Users\\avs7\\.nuget\\packages\\polly\\7.1.0\\lib\\netstandard2.0\\Polly.dll"
+        "C:\\Users\\avs7\\.nuget\\packages\\polly\\7.2.2\\lib\\netstandard2.0\\Polly.dll"
       ],
-      "Path": "C:\\Users\\avs7\\.nuget\\packages\\polly\\7.1.0"
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\polly\\7.2.2"
+    },
+    {
+      "Package": {
+        "Id": "Polly.Contrib.WaitAndRetry",
+        "Version": "1.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\polly.contrib.waitandretry\\1.1.1\\lib\\netstandard2.0\\Polly.Contrib.WaitAndRetry.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\polly.contrib.waitandretry\\1.1.1"
     },
     {
       "Package": {
@@ -7159,6 +7592,16 @@
     },
     {
       "Package": {
+        "Id": "System.ComponentModel.Annotations",
+        "Version": "5.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\lib\\netstandard2.1\\System.ComponentModel.Annotations.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0"
+    },
+    {
+      "Package": {
         "Id": "System.ComponentModel.Composition",
         "Version": "6.0.0"
       },
@@ -7194,6 +7637,16 @@
       },
       "Assemblies": [],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.console\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Data.DataSetExtensions",
+        "Version": "4.5.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\lib\\netstandard2.0\\System.Data.DataSetExtensions.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\system.data.datasetextensions\\4.5.0"
     },
     {
       "Package": {
@@ -8228,6 +8681,16 @@
     },
     {
       "Package": {
+        "Id": "UiPath.ConnectionClient",
+        "Version": "2.0.7"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.connectionclient\\2.0.7\\lib\\net6.0\\ConnectionClient.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\uipath.connectionclient\\2.0.7"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Database.Activities",
         "Version": "1.9.0"
       },
@@ -8273,6 +8736,19 @@
         "C:\\Users\\avs7\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net6.0-windows7.0\\UiPath.Excel.dll"
       ],
       "Path": "C:\\Users\\avs7\\.nuget\\packages\\uipath.excel.activities\\2.24.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.GoogleCloud.Activities",
+        "Version": "2.4.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.googlecloud.activities\\2.4.1\\lib\\net6.0-windows7.0\\UiPath.GoogleCloud.Activities.API.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.googlecloud.activities\\2.4.1\\lib\\net6.0-windows7.0\\UiPath.GoogleCloud.Activities.Design.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.googlecloud.activities\\2.4.1\\lib\\net6.0-windows7.0\\UiPath.GoogleCloud.Activities.dll",
+        "C:\\Users\\avs7\\.nuget\\packages\\uipath.googlecloud.activities\\2.4.1\\lib\\net6.0-windows7.0\\UiPath.GoogleCloud.dll"
+      ],
+      "Path": "C:\\Users\\avs7\\.nuget\\packages\\uipath.googlecloud.activities\\2.4.1"
     },
     {
       "Package": {

@@ -71,9 +71,12 @@
 			"startDateTime":"",
 			"openAppRequired":"True",
 			"document":"",
+			"documentType":"",
 			"client":"",
 			"operator":"",
-			"complement":""
+			"complement":"",
+			"typeReport":"",
+			"inputId":""
 		}
 	]	
 }

@@ -58,6 +58,8 @@
       "Path": "Framework/Dispatcher/ETL.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "ClientNumber&Sequence_1",
+        "OperatorNumber&Sequence_1",
         "dt_TransactionData&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [
@@ -90,7 +92,10 @@
     {
       "Path": "Framework/Performer/StartPerformer.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "userName&Sequence_2",
+        "password&Sequence_2"
+      ],
       "ArgumentsSectionElementsOrder": [
         "io_PerformerConfiguration",
         "in_DefaultConfiguration",

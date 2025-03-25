@@ -276,6 +276,23 @@
           }
         }
       },
+      "Google.Api.Gax.Rest/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax": "3.3.0",
+          "Google.Apis.Auth": "[1.48.0, 2.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Api.Gax.Rest.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Google.Apis/1.55.0": {
         "type": "package",
         "dependencies": {
@@ -310,6 +327,23 @@
           }
         }
       },
+      "Google.Apis.Compute.v1/1.55.0.2441": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.55.0",
+          "Google.Apis.Auth": "1.55.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Compute.v1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Google.Apis.Core/1.55.0": {
         "type": "package",
         "dependencies": {
@@ -322,6 +356,40 @@
         },
         "runtime": {
           "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Apis.Iam.v1/1.55.0.2428": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.55.0",
+          "Google.Apis.Auth": "1.55.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Iam.v1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Apis.Storage.v1/1.51.0.2234": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.51.0",
+          "Google.Apis.Auth": "1.51.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Storage.v1.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -357,6 +425,77 @@
         },
         "runtime": {
           "lib/netstandard2.0/Google.Cloud.PubSub.V1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Cloud.ResourceManager.V3/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax.Grpc.GrpcCore": "[3.5.0, 4.0.0)",
+          "Google.Cloud.Iam.V1": "[2.2.0, 3.0.0)",
+          "Google.LongRunning": "[2.2.0, 3.0.0)",
+          "Grpc.Core": "[2.38.1, 3.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.ResourceManager.V3.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Cloud.SecretManager.V1/1.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax.Grpc.GrpcCore": "[3.5.0, 4.0.0)",
+          "Google.Cloud.Iam.V1": "[2.2.0, 3.0.0)",
+          "Grpc.Core": "[2.38.1, 3.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.SecretManager.V1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Cloud.Storage.V1/3.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax.Rest": "[3.3.0, 4.0.0)",
+          "Google.Apis.Storage.v1": "[1.51.0.2234, 2.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.Storage.V1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.LongRunning/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax.Grpc.GrpcCore": "[3.3.0, 4.0.0)",
+          "Grpc.Core": "[2.36.4, 3.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.LongRunning.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -658,7 +797,7 @@
           "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll": {}
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/_._": {
@@ -934,6 +1073,42 @@
           "runtimes/win-arm/native/_._": {
             "assetType": "native",
             "rid": "win-arm"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -1875,16 +2050,29 @@
           "lib/netstandard2.1/Oracle.ManagedDataAccess.dll": {}
         }
       },
-      "Polly/7.1.0": {
+      "Polly/7.2.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {
-            "related": ".xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netstandard2.0/Polly.dll": {
-            "related": ".xml"
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Contrib.WaitAndRetry/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Contrib.WaitAndRetry.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -2401,6 +2589,19 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "System.ComponentModel.Annotations/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.ComponentModel.Composition/6.0.0": {
         "type": "package",
         "compile": {
@@ -2470,6 +2671,15 @@
           "ref/netstandard1.3/_._": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Data.DataSetExtensions/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {}
         }
       },
       "System.Data.Odbc/7.0.0": {
@@ -4633,6 +4843,19 @@
           }
         }
       },
+      "UiPath.ConnectionClient/2.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "System.Runtime.Caching": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/ConnectionClient.dll": {}
+        }
+      },
       "UiPath.Database.Activities/1.9.0": {
         "type": "package",
         "dependencies": {
@@ -4939,6 +5162,143 @@
             "locale": "zh-TW"
           },
           "lib/net6.0-windows7.0/zh-TW/UiPath.Excel.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "UiPath.GoogleCloud.Activities/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.55.0",
+          "Google.Apis.Compute.v1": "1.55.0.2441",
+          "Google.Apis.Iam.v1": "1.55.0.2428",
+          "Google.Cloud.ResourceManager.V3": "1.1.0",
+          "Google.Cloud.SecretManager.V1": "1.7.0",
+          "Google.Cloud.Storage.V1": "3.5.0",
+          "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Caching.Memory": "6.0.0",
+          "Polly": "7.2.2",
+          "Polly.Contrib.WaitAndRetry": "1.1.1",
+          "System.ComponentModel.Annotations": "5.0.0",
+          "System.Data.DataSetExtensions": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Json": "5.0.2",
+          "UiPath.CodedWorkflows": "24.4.2",
+          "UiPath.ConnectionClient": "2.0.7",
+          "UiPath.Platform": "23.4.0",
+          "UiPath.Telemetry.Client": "1.5.3"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.API.dll": {},
+          "lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.Design.dll": {},
+          "lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.dll": {},
+          "lib/net6.0-windows7.0/UiPath.GoogleCloud.dll": {}
+        },
+        "resource": {
+          "lib/net6.0-windows7.0/de/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/UiPath.GoogleCloud.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.GoogleCloud.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.GoogleCloud.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.GoogleCloud.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.GoogleCloud.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.GoogleCloud.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.GoogleCloud.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.GoogleCloud.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.GoogleCloud.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.GoogleCloud.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.GoogleCloud.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zh-TW/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net6.0-windows7.0/zh-TW/UiPath.GoogleCloud.Activities.resources.dll": {
             "locale": "zh-TW"
           }
         }
@@ -6349,6 +6709,23 @@
           }
         }
       },
+      "Google.Api.Gax.Rest/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax": "3.3.0",
+          "Google.Apis.Auth": "[1.48.0, 2.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Api.Gax.Rest.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Google.Apis/1.55.0": {
         "type": "package",
         "dependencies": {
@@ -6383,6 +6760,23 @@
           }
         }
       },
+      "Google.Apis.Compute.v1/1.55.0.2441": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.55.0",
+          "Google.Apis.Auth": "1.55.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Compute.v1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Google.Apis.Core/1.55.0": {
         "type": "package",
         "dependencies": {
@@ -6395,6 +6789,40 @@
         },
         "runtime": {
           "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Apis.Iam.v1/1.55.0.2428": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.55.0",
+          "Google.Apis.Auth": "1.55.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Iam.v1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Apis.Storage.v1/1.51.0.2234": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.51.0",
+          "Google.Apis.Auth": "1.51.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Storage.v1.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -6430,6 +6858,77 @@
         },
         "runtime": {
           "lib/netstandard2.0/Google.Cloud.PubSub.V1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Cloud.ResourceManager.V3/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax.Grpc.GrpcCore": "[3.5.0, 4.0.0)",
+          "Google.Cloud.Iam.V1": "[2.2.0, 3.0.0)",
+          "Google.LongRunning": "[2.2.0, 3.0.0)",
+          "Grpc.Core": "[2.38.1, 3.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.ResourceManager.V3.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Cloud.SecretManager.V1/1.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax.Grpc.GrpcCore": "[3.5.0, 4.0.0)",
+          "Google.Cloud.Iam.V1": "[2.2.0, 3.0.0)",
+          "Grpc.Core": "[2.38.1, 3.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.SecretManager.V1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Cloud.Storage.V1/3.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax.Rest": "[3.3.0, 4.0.0)",
+          "Google.Apis.Storage.v1": "[1.51.0.2234, 2.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.Storage.V1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.LongRunning/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax.Grpc.GrpcCore": "[3.3.0, 4.0.0)",
+          "Grpc.Core": "[2.36.4, 3.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.LongRunning.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -6728,7 +7227,7 @@
           "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll": {}
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/_._": {
@@ -6990,6 +7489,42 @@
         "type": "package",
         "native": {
           "runtimes/win-x64/native/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/6.0.2": {
@@ -7827,16 +8362,29 @@
           "lib/netstandard2.1/Oracle.ManagedDataAccess.dll": {}
         }
       },
-      "Polly/7.1.0": {
+      "Polly/7.2.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {
-            "related": ".xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netstandard2.0/Polly.dll": {
-            "related": ".xml"
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Contrib.WaitAndRetry/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Contrib.WaitAndRetry.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -8548,6 +9096,19 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "System.ComponentModel.Annotations/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.ComponentModel.Composition/6.0.0": {
         "type": "package",
         "compile": {
@@ -8618,6 +9179,15 @@
           "ref/netstandard1.3/_._": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Data.DataSetExtensions/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {}
         }
       },
       "System.Data.Odbc/7.0.0": {
@@ -10596,6 +11166,19 @@
           }
         }
       },
+      "UiPath.ConnectionClient/2.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "System.Runtime.Caching": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/ConnectionClient.dll": {}
+        }
+      },
       "UiPath.Database.Activities/1.9.0": {
         "type": "package",
         "dependencies": {
@@ -10902,6 +11485,143 @@
             "locale": "zh-TW"
           },
           "lib/net6.0-windows7.0/zh-TW/UiPath.Excel.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "UiPath.GoogleCloud.Activities/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.55.0",
+          "Google.Apis.Compute.v1": "1.55.0.2441",
+          "Google.Apis.Iam.v1": "1.55.0.2428",
+          "Google.Cloud.ResourceManager.V3": "1.1.0",
+          "Google.Cloud.SecretManager.V1": "1.7.0",
+          "Google.Cloud.Storage.V1": "3.5.0",
+          "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Caching.Memory": "6.0.0",
+          "Polly": "7.2.2",
+          "Polly.Contrib.WaitAndRetry": "1.1.1",
+          "System.ComponentModel.Annotations": "5.0.0",
+          "System.Data.DataSetExtensions": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Json": "5.0.2",
+          "UiPath.CodedWorkflows": "24.4.2",
+          "UiPath.ConnectionClient": "2.0.7",
+          "UiPath.Platform": "23.4.0",
+          "UiPath.Telemetry.Client": "1.5.3"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.API.dll": {},
+          "lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.Design.dll": {},
+          "lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.dll": {},
+          "lib/net6.0-windows7.0/UiPath.GoogleCloud.dll": {}
+        },
+        "resource": {
+          "lib/net6.0-windows7.0/de/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/UiPath.GoogleCloud.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.GoogleCloud.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.GoogleCloud.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.GoogleCloud.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.GoogleCloud.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.GoogleCloud.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.GoogleCloud.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.GoogleCloud.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.GoogleCloud.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.GoogleCloud.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.GoogleCloud.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.GoogleCloud.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zh-TW/UiPath.GoogleCloud.Activities.Design.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net6.0-windows7.0/zh-TW/UiPath.GoogleCloud.Activities.resources.dll": {
             "locale": "zh-TW"
           }
         }
@@ -12344,6 +13064,25 @@
         "lib/netstandard2.0/Google.Api.Gax.Grpc.GrpcCore.xml"
       ]
     },
+    "Google.Api.Gax.Rest/3.3.0": {
+      "sha512": "/D3FTV5FH3I4vzbLSRWmeU/1ckFP6kk195Wga51UTWip7EYRUSEFEQzCWb+VHcB7HgCYp98KvIxg3B6cDKPJQQ==",
+      "type": "package",
+      "path": "google.api.gax.rest/3.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.api.gax.rest.3.3.0.nupkg.sha512",
+        "google.api.gax.rest.nuspec",
+        "lib/net461/Google.Api.Gax.Rest.dll",
+        "lib/net461/Google.Api.Gax.Rest.pdb",
+        "lib/net461/Google.Api.Gax.Rest.xml",
+        "lib/netstandard2.0/Google.Api.Gax.Rest.dll",
+        "lib/netstandard2.0/Google.Api.Gax.Rest.pdb",
+        "lib/netstandard2.0/Google.Api.Gax.Rest.xml"
+      ]
+    },
     "Google.Apis/1.55.0": {
       "sha512": "siw3M6VOFbkrTlOTo7F89BrdDFQw/XVks8qo4xDMXwGpwKpCt0KWENYs7N2RWFznJghlrmPuZ6Sx13vvYqrynA==",
       "type": "package",
@@ -12396,6 +13135,34 @@
         "lib/netstandard2.0/Google.Apis.Auth.xml"
       ]
     },
+    "Google.Apis.Compute.v1/1.55.0.2441": {
+      "sha512": "sekyBYKFTjNZ1jFW5Whg5k0vR2wWkAk0IxcvekLGov0Ijtyhqc3s6iC41WtWeTBxa4/xRxhfhVi09BqLfpPb2g==",
+      "type": "package",
+      "path": "google.apis.compute.v1/1.55.0.2441",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.compute.v1.1.55.0.2441.nupkg.sha512",
+        "google.apis.compute.v1.nuspec",
+        "lib/net40/Google.Apis.Compute.v1.dll",
+        "lib/net40/Google.Apis.Compute.v1.pdb",
+        "lib/net40/Google.Apis.Compute.v1.xml",
+        "lib/net45/Google.Apis.Compute.v1.dll",
+        "lib/net45/Google.Apis.Compute.v1.pdb",
+        "lib/net45/Google.Apis.Compute.v1.xml",
+        "lib/netstandard1.0/Google.Apis.Compute.v1.dll",
+        "lib/netstandard1.0/Google.Apis.Compute.v1.pdb",
+        "lib/netstandard1.0/Google.Apis.Compute.v1.xml",
+        "lib/netstandard1.3/Google.Apis.Compute.v1.dll",
+        "lib/netstandard1.3/Google.Apis.Compute.v1.pdb",
+        "lib/netstandard1.3/Google.Apis.Compute.v1.xml",
+        "lib/netstandard2.0/Google.Apis.Compute.v1.dll",
+        "lib/netstandard2.0/Google.Apis.Compute.v1.pdb",
+        "lib/netstandard2.0/Google.Apis.Compute.v1.xml"
+      ]
+    },
     "Google.Apis.Core/1.55.0": {
       "sha512": "QX6pmjRxZYgyGFqsa7tyxdjoEb6ssJ9lv6ub8AxhPd/BCMEglmqzW4GpsuKQZaRg9Qq9gp9HRzjCiLZ3RgmNgw==",
       "type": "package",
@@ -12416,6 +13183,62 @@
         "lib/netstandard2.0/Google.Apis.Core.dll",
         "lib/netstandard2.0/Google.Apis.Core.pdb",
         "lib/netstandard2.0/Google.Apis.Core.xml"
+      ]
+    },
+    "Google.Apis.Iam.v1/1.55.0.2428": {
+      "sha512": "pUTmVKb1YDJDsiSFLivVa4CyeCdf5rYQBqASER2KrfwX7FzgbfLdyawMU+mHMhoBJYM0HNA5zpowLX4u7/mS2w==",
+      "type": "package",
+      "path": "google.apis.iam.v1/1.55.0.2428",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.iam.v1.1.55.0.2428.nupkg.sha512",
+        "google.apis.iam.v1.nuspec",
+        "lib/net40/Google.Apis.Iam.v1.dll",
+        "lib/net40/Google.Apis.Iam.v1.pdb",
+        "lib/net40/Google.Apis.Iam.v1.xml",
+        "lib/net45/Google.Apis.Iam.v1.dll",
+        "lib/net45/Google.Apis.Iam.v1.pdb",
+        "lib/net45/Google.Apis.Iam.v1.xml",
+        "lib/netstandard1.0/Google.Apis.Iam.v1.dll",
+        "lib/netstandard1.0/Google.Apis.Iam.v1.pdb",
+        "lib/netstandard1.0/Google.Apis.Iam.v1.xml",
+        "lib/netstandard1.3/Google.Apis.Iam.v1.dll",
+        "lib/netstandard1.3/Google.Apis.Iam.v1.pdb",
+        "lib/netstandard1.3/Google.Apis.Iam.v1.xml",
+        "lib/netstandard2.0/Google.Apis.Iam.v1.dll",
+        "lib/netstandard2.0/Google.Apis.Iam.v1.pdb",
+        "lib/netstandard2.0/Google.Apis.Iam.v1.xml"
+      ]
+    },
+    "Google.Apis.Storage.v1/1.51.0.2234": {
+      "sha512": "l50ucoQRH4p2itqrdxjn9nyA7MNv1zXmWPZPkzASxGP9N/5jnZJ8ZAoRqXXPEDkQ7+1DK+O188iNfJ+WtZ4ELQ==",
+      "type": "package",
+      "path": "google.apis.storage.v1/1.51.0.2234",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.storage.v1.1.51.0.2234.nupkg.sha512",
+        "google.apis.storage.v1.nuspec",
+        "lib/net40/Google.Apis.Storage.v1.dll",
+        "lib/net40/Google.Apis.Storage.v1.pdb",
+        "lib/net40/Google.Apis.Storage.v1.xml",
+        "lib/net45/Google.Apis.Storage.v1.dll",
+        "lib/net45/Google.Apis.Storage.v1.pdb",
+        "lib/net45/Google.Apis.Storage.v1.xml",
+        "lib/netstandard1.0/Google.Apis.Storage.v1.dll",
+        "lib/netstandard1.0/Google.Apis.Storage.v1.pdb",
+        "lib/netstandard1.0/Google.Apis.Storage.v1.xml",
+        "lib/netstandard1.3/Google.Apis.Storage.v1.dll",
+        "lib/netstandard1.3/Google.Apis.Storage.v1.pdb",
+        "lib/netstandard1.3/Google.Apis.Storage.v1.xml",
+        "lib/netstandard2.0/Google.Apis.Storage.v1.dll",
+        "lib/netstandard2.0/Google.Apis.Storage.v1.pdb",
+        "lib/netstandard2.0/Google.Apis.Storage.v1.xml"
       ]
     },
     "Google.Cloud.Iam.V1/2.4.0": {
@@ -12454,6 +13277,82 @@
         "lib/netstandard2.0/Google.Cloud.PubSub.V1.dll",
         "lib/netstandard2.0/Google.Cloud.PubSub.V1.pdb",
         "lib/netstandard2.0/Google.Cloud.PubSub.V1.xml"
+      ]
+    },
+    "Google.Cloud.ResourceManager.V3/1.1.0": {
+      "sha512": "9w6Vy4DWG1rN9dxCc3fkpozc9Gnv6XwbIViPaDYYlm1nLsMvFacQedxHioPgT4XxnByORv2HW0Nei49Sx/6W3Q==",
+      "type": "package",
+      "path": "google.cloud.resourcemanager.v3/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.cloud.resourcemanager.v3.1.1.0.nupkg.sha512",
+        "google.cloud.resourcemanager.v3.nuspec",
+        "lib/net461/Google.Cloud.ResourceManager.V3.dll",
+        "lib/net461/Google.Cloud.ResourceManager.V3.pdb",
+        "lib/net461/Google.Cloud.ResourceManager.V3.xml",
+        "lib/netstandard2.0/Google.Cloud.ResourceManager.V3.dll",
+        "lib/netstandard2.0/Google.Cloud.ResourceManager.V3.pdb",
+        "lib/netstandard2.0/Google.Cloud.ResourceManager.V3.xml"
+      ]
+    },
+    "Google.Cloud.SecretManager.V1/1.7.0": {
+      "sha512": "XS+zY7f5hQWarXFRMYhNdfmuaioVb1oLgPXWwmnL/vlKpuPI1Z/OiO5lwO8mufSgl0sZXjWz0NODqaPsqvJbbg==",
+      "type": "package",
+      "path": "google.cloud.secretmanager.v1/1.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.cloud.secretmanager.v1.1.7.0.nupkg.sha512",
+        "google.cloud.secretmanager.v1.nuspec",
+        "lib/net461/Google.Cloud.SecretManager.V1.dll",
+        "lib/net461/Google.Cloud.SecretManager.V1.pdb",
+        "lib/net461/Google.Cloud.SecretManager.V1.xml",
+        "lib/netstandard2.0/Google.Cloud.SecretManager.V1.dll",
+        "lib/netstandard2.0/Google.Cloud.SecretManager.V1.pdb",
+        "lib/netstandard2.0/Google.Cloud.SecretManager.V1.xml"
+      ]
+    },
+    "Google.Cloud.Storage.V1/3.5.0": {
+      "sha512": "43R4eBJqJCTSN8kVh9apl3CgvwJwS2senmgbgppp1VLibmZgvaM27k5F7PXJU9IWN+ZsF4MujjPCvxlHyIFfTA==",
+      "type": "package",
+      "path": "google.cloud.storage.v1/3.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.cloud.storage.v1.3.5.0.nupkg.sha512",
+        "google.cloud.storage.v1.nuspec",
+        "lib/net461/Google.Cloud.Storage.V1.dll",
+        "lib/net461/Google.Cloud.Storage.V1.pdb",
+        "lib/net461/Google.Cloud.Storage.V1.xml",
+        "lib/netstandard2.0/Google.Cloud.Storage.V1.dll",
+        "lib/netstandard2.0/Google.Cloud.Storage.V1.pdb",
+        "lib/netstandard2.0/Google.Cloud.Storage.V1.xml"
+      ]
+    },
+    "Google.LongRunning/2.2.0": {
+      "sha512": "0i8BDoiVNDDaMBvZ/VzYYf8JWNs6L0UuVGkWOJ+W2UXu9N6nbhQpJ5kL+9xflM9xy9h1DdGJK2ydm7eDtA6Sjg==",
+      "type": "package",
+      "path": "google.longrunning/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.longrunning.2.2.0.nupkg.sha512",
+        "google.longrunning.nuspec",
+        "lib/net461/Google.LongRunning.dll",
+        "lib/net461/Google.LongRunning.pdb",
+        "lib/net461/Google.LongRunning.xml",
+        "lib/netstandard2.0/Google.LongRunning.dll",
+        "lib/netstandard2.0/Google.LongRunning.pdb",
+        "lib/netstandard2.0/Google.LongRunning.xml"
       ]
     },
     "Google.Protobuf/3.18.0": {
@@ -12834,26 +13733,27 @@
         "pkgicon.png"
       ]
     },
-    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
-      "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
+    "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
+      "sha512": "3aeMZ1N0lJoSyzqiP03hqemtb1BijhsJADdobn/4nsMJ8V1H+CrpuduUe4hlRdx+ikBQju1VGjMD1GJ3Sk05Eg==",
       "type": "package",
-      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
+      "path": "microsoft.bcl.asyncinterfaces/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "buildTransitive/net461/Microsoft.Bcl.AsyncInterfaces.targets",
+        "buildTransitive/net462/_._",
+        "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net462/Microsoft.Bcl.AsyncInterfaces.xml",
         "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
         "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
-        "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
         "microsoft.bcl.asyncinterfaces.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/3.3.3": {
@@ -13417,6 +14317,44 @@
         "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll",
         "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll",
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
+      "sha512": "bcz5sSFJbganH0+YrfvIjJDIcKNW7TL07C4d1eTmXy/wOt52iz4LVogJb6pazs7W0+74j0YpXFErvp++Aq5Bsw==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Memory/6.0.0": {
+      "sha512": "Ve3BlCzhAlVp5IgO3+8dacAhZk1A0GlIlFNkAcfR2TfAibLKWIt5DhVJZfu4YtW+XZ89OjYf/agMcgjDtPxdGA==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.memory/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/net461/Microsoft.Extensions.Caching.Memory.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
+        "microsoft.extensions.caching.memory.6.0.0.nupkg.sha512",
+        "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.DependencyInjection/6.0.2": {
@@ -14760,19 +15698,50 @@
         "oracle.png"
       ]
     },
-    "Polly/7.1.0": {
-      "sha512": "mpQsvlEn4ipgICh5CGyVLPV93RFVzOrBG7wPZfzY8gExh7XgWQn0GCDY9nudbUEJ12UiGPP9i4+CohghBvzhmg==",
+    "Polly/7.2.2": {
+      "sha512": "E6CeKyS513j7taKAq4q2MESDBvzuzWnR1rQ2Y2zqJvpiVtKMm699Aubb20MUPBDmb0Ov8PmcLHTCVFdCjoy2kA==",
       "type": "package",
-      "path": "polly/7.1.0",
+      "path": "polly/7.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "lib/net461/Polly.dll",
+        "lib/net461/Polly.pdb",
+        "lib/net461/Polly.xml",
+        "lib/net472/Polly.dll",
+        "lib/net472/Polly.pdb",
+        "lib/net472/Polly.xml",
         "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
         "lib/netstandard1.1/Polly.xml",
         "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.pdb",
         "lib/netstandard2.0/Polly.xml",
-        "polly.7.1.0.nupkg.sha512",
+        "polly.7.2.2.nupkg.sha512",
         "polly.nuspec"
+      ]
+    },
+    "Polly.Contrib.WaitAndRetry/1.1.1": {
+      "sha512": "1MUQLiSo4KDkQe6nzQRhIU05lm9jlexX5BVsbuw0SL82ynZ+GzAHQxJVDPVBboxV37Po3SG077aX8DuSy8TkaA==",
+      "type": "package",
+      "path": "polly.contrib.waitandretry/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Polly.Contrib.WaitAndRetry.dll",
+        "lib/net461/Polly.Contrib.WaitAndRetry.pdb",
+        "lib/net461/Polly.Contrib.WaitAndRetry.xml",
+        "lib/net472/Polly.Contrib.WaitAndRetry.dll",
+        "lib/net472/Polly.Contrib.WaitAndRetry.pdb",
+        "lib/net472/Polly.Contrib.WaitAndRetry.xml",
+        "lib/netstandard1.1/Polly.Contrib.WaitAndRetry.dll",
+        "lib/netstandard1.1/Polly.Contrib.WaitAndRetry.pdb",
+        "lib/netstandard1.1/Polly.Contrib.WaitAndRetry.xml",
+        "lib/netstandard2.0/Polly.Contrib.WaitAndRetry.dll",
+        "lib/netstandard2.0/Polly.Contrib.WaitAndRetry.pdb",
+        "lib/netstandard2.0/Polly.Contrib.WaitAndRetry.xml",
+        "polly.contrib.waitandretry.1.1.1.nupkg.sha512",
+        "polly.contrib.waitandretry.nuspec"
       ]
     },
     "Portable.BouncyCastle/1.8.9": {
@@ -16218,6 +17187,96 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "sha512": "dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "type": "package",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net461/System.ComponentModel.Annotations.dll",
+        "lib/netcore50/System.ComponentModel.Annotations.dll",
+        "lib/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.1/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.1/System.ComponentModel.Annotations.xml",
+        "lib/portable-net45+win8/_._",
+        "lib/win8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net461/System.ComponentModel.Annotations.dll",
+        "ref/net461/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/System.ComponentModel.Annotations.dll",
+        "ref/netcore50/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/de/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/es/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/fr/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/it/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ja/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ko/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ru/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.xml",
+        "ref/netstandard2.1/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.1/System.ComponentModel.Annotations.xml",
+        "ref/portable-net45+win8/_._",
+        "ref/win8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.componentmodel.annotations.5.0.0.nupkg.sha512",
+        "system.componentmodel.annotations.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.ComponentModel.Composition/6.0.0": {
       "sha512": "60Qv+F7oxomOjJeTDA5Z4iCyFbQ0B/2Mi5HT+13pxxq0lVnu2ipbWMzFB+RWKr3wWKA8BSncXr9PH/fECwMX5Q==",
       "type": "package",
@@ -16327,6 +17386,25 @@
         "ref/xamarinwatchos10/_._",
         "system.console.4.3.0.nupkg.sha512",
         "system.console.nuspec"
+      ]
+    },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "sha512": "221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
+      "type": "package",
+      "path": "system.data.datasetextensions/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "system.data.datasetextensions.4.5.0.nupkg.sha512",
+        "system.data.datasetextensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Data.Odbc/7.0.0": {
@@ -21091,6 +22169,20 @@
         "uipath.codedworkflows.nuspec"
       ]
     },
+    "UiPath.ConnectionClient/2.0.7": {
+      "sha512": "Wi2F23VRoZXXscb8wRF1DSJIkHb3r35qU7saaq94pnuUmmJ247iho0sVwRmjSa/Y2rcAmNj/2aaSrYOf1t4Z4g==",
+      "type": "package",
+      "path": "uipath.connectionclient/2.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "UI_icon.png",
+        "lib/net461/ConnectionClient.dll",
+        "lib/net6.0/ConnectionClient.dll",
+        "uipath.connectionclient.2.0.7.nupkg.sha512",
+        "uipath.connectionclient.nuspec"
+      ]
+    },
     "UiPath.Database.Activities/1.9.0": {
       "sha512": "7EkLqasLrsoLjPD8V3ts4ZnfrKJmRMTB5/OloVme+oAPZiICWXCYPWF+JXvhC5fUawgKzj4LnthdCDrHqEIn3A==",
       "type": "package",
@@ -21371,6 +22463,117 @@
         "lib/net6.0/zh-TW/UiPath.Excel.resources.dll",
         "uipath.excel.activities.2.24.4.nupkg.sha512",
         "uipath.excel.activities.nuspec"
+      ]
+    },
+    "UiPath.GoogleCloud.Activities/2.4.1": {
+      "sha512": "rs16SRCKAv08cZwCyXT/8lP8iuZ3bt931mwFqKIqqZasffQnvYVM9LQwjVQHhwgM2skX/4NG+nqcCBrj9PoTkw==",
+      "type": "package",
+      "path": "uipath.googlecloud.activities/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/UiPath.GoogleCloud.Activities.Design.dll",
+        "lib/net461/UiPath.GoogleCloud.Activities.dll",
+        "lib/net461/UiPath.GoogleCloud.dll",
+        "lib/net461/de/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/de/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net461/de/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/es-MX/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/es-MX/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net461/es-MX/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/es/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/es/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net461/es/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/fr/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/fr/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net461/fr/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/ja/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/ja/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net461/ja/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/ko/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/ko/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net461/ko/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/pt-BR/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/pt-BR/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net461/pt-BR/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/pt/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/pt/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net461/pt/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/ru/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/ru/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net461/ru/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/tr/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/tr/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net461/tr/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/zh-CN/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/zh-CN/UiPath.GoogleCloud.resources.dll",
+        "lib/net461/zh-TW/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net461/zh-TW/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.API.dll",
+        "lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.Design.dll",
+        "lib/net6.0-windows7.0/UiPath.GoogleCloud.Activities.dll",
+        "lib/net6.0-windows7.0/UiPath.GoogleCloud.dll",
+        "lib/net6.0-windows7.0/de/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/de/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/de/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/es-MX/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/es-MX/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/es-MX/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/es/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/es/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/es/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/fr/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/fr/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/fr/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/ja/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/ja/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/ja/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/ko/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/ko/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/ko/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/pt-BR/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/pt-BR/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/pt-BR/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/pt/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/pt/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/pt/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/ru/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/ru/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/ru/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/tr/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/tr/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0-windows7.0/tr/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/zh-CN/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/zh-CN/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0-windows7.0/zh-TW/UiPath.GoogleCloud.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/zh-TW/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/UiPath.GoogleCloud.Activities.API.dll",
+        "lib/net6.0/UiPath.GoogleCloud.Activities.dll",
+        "lib/net6.0/UiPath.GoogleCloud.dll",
+        "lib/net6.0/de/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/de/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/es-MX/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/es-MX/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/es/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/es/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/fr/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/fr/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/ja/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/ja/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/ko/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/ko/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/pt-BR/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/pt-BR/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/pt/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/pt/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/ru/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/ru/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/tr/UiPath.GoogleCloud.Activities.resources.dll",
+        "lib/net6.0/tr/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/zh-CN/UiPath.GoogleCloud.resources.dll",
+        "lib/net6.0/zh-TW/UiPath.GoogleCloud.Activities.resources.dll",
+        "uipath.googlecloud.activities.2.4.1.nupkg.sha512",
+        "uipath.googlecloud.activities.nuspec"
       ]
     },
     "UiPath.ImageProcessing/23.4.0": {
@@ -23226,6 +24429,7 @@
       "RPA.COE.Analytics.Core >= 1.1.13 <= 1.1.13",
       "UiPath.Database.Activities >= 1.9.0 <= 1.9.0",
       "UiPath.Excel.Activities >= 2.24.4 <= 2.24.4",
+      "UiPath.GoogleCloud.Activities >= 2.4.1 <= 2.4.1",
       "UiPath.System.Activities >= 24.10.7 <= 24.10.7",
       "UiPath.Testing.Activities >= 24.10.3 <= 24.10.3",
       "UiPath.UIAutomation.Activities >= 24.10.10 <= 24.10.10",
@@ -23273,6 +24477,11 @@
             "target": "Package",
             "version": "[2.24.4, 2.24.4]"
           },
+          "UiPath.GoogleCloud.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[2.4.1, 2.4.1]"
+          },
           "UiPath.System.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -23312,14 +24521,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU3005",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DocumentFormat.OpenXml 2.16.0' from source 'https://syqgcpdrpaoc.us.equifax.com/nuget/v3/4b43de0a-aff3-4270-91de-d51ef7b655b8/index.json': The package signature file entry is invalid. The central directory header field 'compression method' has an invalid value (8).",
-      "libraryId": "DocumentFormat.OpenXml"
-    }
-  ]
+  }
 }

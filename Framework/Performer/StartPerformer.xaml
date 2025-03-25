@@ -412,7 +412,7 @@
                 </Assign>
               </Sequence>
               <FlowStep.Next>
-                <FlowStep x:Name="__ReferenceID0">
+                <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">330,408.5</av:Point>
@@ -420,47 +420,73 @@
                       <av:PointCollection x:Key="ConnectorLocation">430,489.5 430,513.52</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Execute Performer" sap:VirtualizedContainerService.HintSize="1174,2493" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <Sequence DisplayName="Execute Performer" sap:VirtualizedContainerService.HintSize="1174,3890" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Consult" sap:VirtualizedContainerService.HintSize="1112,81" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <Sequence DisplayName="Consult" sap:VirtualizedContainerService.HintSize="1112,1608" sap2010:WorkflowViewState.IdRef="Sequence_12">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Portal Transacional - Equifax | Boa Vista" sap:VirtualizedContainerService.HintSize="409,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="131358c8-fa6c-433b-a707-3d88d7fb1f90" Version="V2">
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Portal Transacional - Equifax | Boa Vista" sap:VirtualizedContainerService.HintSize="506,1497" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="131358c8-fa6c-433b-a707-3d88d7fb1f90" Version="V2">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,922" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="472,1240" sap2010:WorkflowViewState.IdRef="Sequence_15">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NCheck Action="Check" DisplayName="Check CPF" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="131358c8-fa6c-433b-a707-3d88d7fb1f90" Version="V4">
-                                <uix:NCheck.Target>
-                                  <uix:TargetAnchorable BrowserURL="cliente.bvsnet.com.br/produto/ap-historico-padrao" DesignTimeRectangle="196, 528, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl idx='2' parentname='FrmAsso' tag='TABLE' /&gt;&lt;webctrl id='lk_tpdoc1' tableRow='1' tag='INPUT' /&gt;" Guid="d2ac288b-51d5-4e6d-bb77-968cbab7e4b1" ImageBase64="" InformativeScreenshot="e033e410a7399fd322d23ba0c21ca57f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal Transacional - Equifax | Boa Vista' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                                </uix:NCheck.Target>
-                              </uix:NCheck>
-                              <uix:NCheck Action="Uncheck" DisplayName="Check CNPJ" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="131358c8-fa6c-433b-a707-3d88d7fb1f90" Version="V4">
-                                <uix:NCheck.Target>
-                                  <uix:TargetAnchorable BrowserURL="cliente.bvsnet.com.br/produto/ap-historico-padrao" DesignTimeRectangle="249, 528, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl idx='2' parentname='FrmAsso' tag='TABLE' /&gt;&lt;webctrl id='lk_tpdoc2' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl parentname='FrmAsso' tag='TABLE' /&gt;&lt;webctrl id='lk_tpdoc2' type='radio' tag='INPUT' class='' aaname='' /&gt;" Guid="0e46117c-a0d5-4d61-a129-75a12b3cc4d6" ImageBase64="" InformativeScreenshot="c6a2c4244c1337ad3a9cd9ea4a43f081.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal Transacional - Equifax | Boa Vista' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
-                                </uix:NCheck.Target>
-                              </uix:NCheck>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Document Number" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="131358c8-fa6c-433b-a707-3d88d7fb1f90" Version="V4">
+                              <If Condition="[io_PerformerConfiguration(&quot;documentType&quot;).ToString.Contains(&quot;CPF&quot;)]" sap:VirtualizedContainerService.HintSize="410,672" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NCheck Action="Check" DisplayName="Check CPF" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="131358c8-fa6c-433b-a707-3d88d7fb1f90" Version="V4">
+                                      <uix:NCheck.Target>
+                                        <uix:TargetAnchorable BrowserURL="cliente.bvsnet.com.br/produto/ap-historico-padrao" DesignTimeRectangle="196, 528, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl idx='2' parentname='FrmAsso' tag='TABLE' /&gt;&lt;webctrl id='lk_tpdoc1' tableRow='1' tag='INPUT' /&gt;" Guid="d2ac288b-51d5-4e6d-bb77-968cbab7e4b1" ImageBase64="" InformativeScreenshot="e033e410a7399fd322d23ba0c21ca57f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal Transacional - Equifax | Boa Vista' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      </uix:NCheck.Target>
+                                    </uix:NCheck>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NCheck Action="Check" DisplayName="Check CNPJ" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="131358c8-fa6c-433b-a707-3d88d7fb1f90" Version="V4">
+                                      <uix:NCheck.Target>
+                                        <uix:TargetAnchorable BrowserURL="cliente.bvsnet.com.br/produto/ap-historico-padrao" DesignTimeRectangle="249, 528, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl idx='2' parentname='FrmAsso' tag='TABLE' /&gt;&lt;webctrl id='lk_tpdoc2' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl parentname='FrmAsso' tag='TABLE' /&gt;&lt;webctrl id='lk_tpdoc2' type='radio' tag='INPUT' class='' aaname='' /&gt;" Guid="0e46117c-a0d5-4d61-a129-75a12b3cc4d6" ImageBase64="" InformativeScreenshot="c6a2c4244c1337ad3a9cd9ea4a43f081.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal Transacional - Equifax | Boa Vista' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                      </uix:NCheck.Target>
+                                    </uix:NCheck>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Document Number" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="131358c8-fa6c-433b-a707-3d88d7fb1f90" Text="[io_PerformerConfiguration(&quot;document&quot;).ToString]" Version="V4">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="cliente.bvsnet.com.br/produto/ap-historico-padrao" DesignTimeRectangle="304, 526, 105, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='lk_nrcpf' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='lk_nrcpf' type='text' tag='INPUT' class='form' aaname='' /&gt;" Guid="2969b59d-9b2e-407c-aa6b-db5f93ff2415" InformativeScreenshot="ba11b4ba5c337bca6c0ac9e4d8971329.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal Transacional - Equifax | Boa Vista' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                                 </uix:NTypeInto.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Consultar'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="131358c8-fa6c-433b-a707-3d88d7fb1f90" Version="V4">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Consultar'" sap:VirtualizedContainerService.HintSize="410,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="131358c8-fa6c-433b-a707-3d88d7fb1f90" Version="V4">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="cliente.bvsnet.com.br/produto/ap-historico-padrao" DesignTimeRectangle="301, 568, 62, 16" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl parentname='FrmAsso' tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='form' aaname='Consultar' check:text='Consultar' /&gt;" Guid="8cd8e903-a4d8-4252-8494-0eec3ed28b31" InformativeScreenshot="e495cb9525f15717eb053328c7a9d021.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal Transacional - Equifax | Boa Vista' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
                                 </uix:NClick.Target>
@@ -473,31 +499,31 @@
                         </uix:NApplicationCard.TargetApp>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NApplicationCard>
                     </Sequence>
-                    <Sequence DisplayName="Save Document" sap:VirtualizedContainerService.HintSize="1112,2118" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <Sequence DisplayName="Save Document" sap:VirtualizedContainerService.HintSize="1112,1988" sap2010:WorkflowViewState.IdRef="Sequence_13">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Portal Transacional - Equifax | Boa Vista" sap:VirtualizedContainerService.HintSize="1050,2007" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="8d095b44-83e5-44c1-b5e3-3a7831c4c48d" Version="V2">
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Portal Transacional - Equifax | Boa Vista" sap:VirtualizedContainerService.HintSize="1050,1877" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="8d095b44-83e5-44c1-b5e3-3a7831c4c48d" Version="V2">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1790" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1660" sap2010:WorkflowViewState.IdRef="Sequence_16">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NCheckState DisplayName="Check App State 'IMG'" sap:VirtualizedContainerService.HintSize="954,362" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="8d095b44-83e5-44c1-b5e3-3a7831c4c48d" Timeout="15" Version="V4">
+                              <uix:NCheckState DisplayName="Check App State 'IMG'" sap:VirtualizedContainerService.HintSize="954,322" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="8d095b44-83e5-44c1-b5e3-3a7831c4c48d" Timeout="15" Version="V4">
                                 <uix:NCheckState.IfExists>
                                   <Sequence DisplayName="Target appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -531,7 +557,7 @@
                                   <uix:TargetAnchorable BrowserURL="cliente.bvsnet.com.br/produto/ap-historico-padrao" DesignTimeRectangle="708, 390, 33, 26" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='salvar' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_consulta' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='salvar' type='' tag='IMG' class='' aaname=' &amp;#x9;  ' /&gt;" Guid="c0c292b5-0302-4859-b940-5b4c44734eb9" InformativeScreenshot="59361ca7d9eae0f368efb6fbd34811ef.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal Transacional - Equifax | Boa Vista' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                                 </uix:NClick.Target>
                               </uix:NClick>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Portal Transacional - E…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="8d095b44-83e5-44c1-b5e3-3a7831c4c48d" Version="V4">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Portal Transacional - E…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="8d095b44-83e5-44c1-b5e3-3a7831c4c48d" Text="[io_PerformerConfiguration(&quot;document&quot;).ToString+&quot;.&quot;+io_PerformerConfiguration(&quot;complement&quot;).ToString+&quot;.pdf&quot;]" Version="V4">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="cliente.bvsnet.com.br/produto/ap-historico-padrao" DesignTimeRectangle="136, 369, 514, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="3bd037dc-9ccf-433c-bf5c-8715b8d8856c" InformativeScreenshot="bec515c7c9313b8910c6cb90f99eefd2.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#*' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -541,19 +567,19 @@
                                   <uix:TargetAnchorable BrowserURL="cliente.bvsnet.com.br/produto/ap-historico-padrao" DesignTimeRectangle="470, 434, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='&amp;amp;Save' /&gt;" Guid="7030b92f-00ae-4dd1-8569-bdbfe0412d2f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFQSURBVGhD7ZbREcIgDIbZiW2YxDdWYRWm8LkbdIOYUKhJi3feqRE0D9/ZlPTlI/zo1nUFQw8TrowJV0YId5er8QGEY1F0mo3XEY5FURuWZTHegAlXxoQrY8KVMeHKjC88BXDOVQKkXs9EjC08R/BcMtYxsfUJGVs4TbePkHtrkzK28CVBwCjxMZ/WUmgxg4SE7zJE7yDwE8A3rJyW70fT4MKJTSSJEjJ3aFM8xIzPJLjI39ZoU7ZvWA+tYV9vEzWYQHilTuguXVymTSaJbdOLz93prrCN0WQe4UiOfhMlLlM6AffppR6a3vZbvhX932Vs4Qn/lbQYqNFSJJ6ymcUF1T7gdHPBj+8CbcYWXkWdY+Ce667IZcLb2jEyjrFikfIfDC18n8YDvd5ZGFr4L2LClTHhyphwZZ4WbrwX4VgUnWbjdYRjXhifx4QrY8JVWeEGxmDISFXaDjEAAAAASUVORK5CYII=" InformativeScreenshot="14cb41e23196a2dabe9d8016fe4058af.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#*' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V4" Visibility="Interactive" />
                                 </uix:NClick.Target>
                               </uix:NClick>
-                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Portal Transacional - Equifax | Boa Vista" sap:VirtualizedContainerService.HintSize="954,621" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="54730c69-85b1-462d-b240-f9594e6e9504" Version="V2">
+                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Portal Transacional - Equifax | Boa Vista" sap:VirtualizedContainerService.HintSize="954,531" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="54730c69-85b1-462d-b240-f9594e6e9504" Version="V2">
                                 <uix:NApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="x:Object">
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,404" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,314" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'Chrome Legacy Window'" sap:VirtualizedContainerService.HintSize="388,234" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="54730c69-85b1-462d-b240-f9594e6e9504" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V4">
+                                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'Chrome Legacy Window'" sap:VirtualizedContainerService.HintSize="388,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="54730c69-85b1-462d-b240-f9594e6e9504" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V4">
                                         <uix:NKeyboardShortcuts.Target>
                                           <uix:TargetAnchorable BrowserURL="cliente.bvsnet.com.br/produto/ap-historico-padrao" DesignTimeRectangle="191, 91, 1000, 620" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd aaname='Portal Transacional - Equifax | Boa Vista' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Portal Transacional - Equifax | Boa Vista' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' check:text='Chrome Legacy Window' /&gt;" Guid="69191aa0-b80e-414e-8b16-82a904186f30" InformativeScreenshot="51e6cf78cd537122fec89c9fdbbcc545.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Portal Transacional - Equifax | Boa Vista - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                                         </uix:NKeyboardShortcuts.Target>
