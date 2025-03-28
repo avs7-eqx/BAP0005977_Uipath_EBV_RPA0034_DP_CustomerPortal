@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vBIYXwQPCP1y7/VEGK8pPdhHerRWJ0y1Xa8W9UMhTCNUaHSuT8CqgVzfjgcVxzAl021Zu4mQTrnU2sKQKWPQIg==",
+  "dgSpecHash": "fN179veCn1wP2HKNevKFUSntkxB0t49UmJAQdV/GNEH1CN8Nw8UEa6v6X8rwXq/ABe6oXZq5dAYS7EpuYJizsw==",
   "success": true,
   "projectFilePath": "C:\\Users\\avs7\\Documents\\34\\RPA0034_DP_CustomerPortal\\.local\\",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\avs7\\.nuget\\packages\\documentformat.openxml\\2.16.0\\documentformat.openxml.2.16.0.nupkg.sha512",
     "C:\\Users\\avs7\\.nuget\\packages\\dynamicexpresso.core\\2.12.0\\dynamicexpresso.core.2.12.0.nupkg.sha512",
     "C:\\Users\\avs7\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
+    "C:\\Users\\avs7\\.nuget\\packages\\gcp_bucket_options\\1.0.1\\gcp_bucket_options.1.0.1.nupkg.sha512",
     "C:\\Users\\avs7\\.nuget\\packages\\google.api.commonprotos\\2.5.0\\google.api.commonprotos.2.5.0.nupkg.sha512",
     "C:\\Users\\avs7\\.nuget\\packages\\google.api.gax\\3.7.0\\google.api.gax.3.7.0.nupkg.sha512",
     "C:\\Users\\avs7\\.nuget\\packages\\google.api.gax.grpc\\3.7.0\\google.api.gax.grpc.3.7.0.nupkg.sha512",

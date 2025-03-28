@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="VariablesAddition" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:c="clr-namespace:Connection_String_Builder_Core;assembly=Connection String Builder Core" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="VariablesAddition" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:c="clr-namespace:Connection_String_Builder_Core;assembly=Connection String Builder Core" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uga="clr-namespace:UiPath.GoogleCloud.Activities;assembly=UiPath.GoogleCloud.Activities" xmlns:ugc="clr-namespace:UiPath.GoogleCloud.Core;assembly=UiPath.GoogleCloud" xmlns:ugm="clr-namespace:UiPath.GoogleCloud.Models;assembly=UiPath.GoogleCloud" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="io_DefaultConfiguration" Type="InOutArgument(scg:Dictionary(x:String, x:String))" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>680,1574</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>680,2356</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>VariablesAddition_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -42,6 +42,15 @@
       <x:String>System.Runtime.InteropServices</x:String>
       <x:String>System.Security.Principal</x:String>
       <x:String>System.Security.Claims</x:String>
+      <x:String>UiPath.GoogleCloud.Core</x:String>
+      <x:String>UiPath.GoogleCloud.Activities</x:String>
+      <x:String>UiPath.GoogleCloud.Models</x:String>
+      <x:String>UiPath.ConnectionClient</x:String>
+      <x:String>UiPath.ConnectionClient.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -88,17 +97,32 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.GoogleCloud</AssemblyReference>
+      <AssemblyReference>UiPath.GoogleCloud.Activities</AssemblyReference>
+      <AssemblyReference>ConnectionClient</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This sequence is going to be use to set up any variables configuration(Assets and Queries) for the bot.&#xA;&#xA;Args&#xA;- io_DefaultConfiguration  {in/out}  Dictionary (Of Sting, String) // Dictionary with default values." DisplayName="VariablesAddition" sap:VirtualizedContainerService.HintSize="450,1509" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This sequence is going to be use to set up any variables configuration(Assets and Queries) for the bot.&#xA;&#xA;Args&#xA;- io_DefaultConfiguration  {in/out}  Dictionary (Of Sting, String) // Dictionary with default values." DisplayName="VariablesAddition" sap:VirtualizedContainerService.HintSize="610,2291" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Start" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Variables addition sequence started...&quot;]" />
-    <ui:GetRobotAsset AssetName="emailPort" CacheStrategy="None" DisplayName="Get Asset emailPort" FolderPath="BVS/Dev" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+    <ui:LogMessage DisplayName="Start" sap:VirtualizedContainerService.HintSize="548,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Variables addition sequence started...&quot;]" />
+    <ui:GetRobotAsset AssetName="emailPort" CacheStrategy="None" DisplayName="Get Asset emailPort" FolderPath="BVS/Dev" sap:VirtualizedContainerService.HintSize="548,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
       <ui:GetRobotAsset.TimeoutMS>
         <InArgument x:TypeArguments="x:Int32" />
       </ui:GetRobotAsset.TimeoutMS>
@@ -106,7 +130,7 @@
         <OutArgument x:TypeArguments="x:String">[io_DefaultConfiguration("emailPort")]</OutArgument>
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
-    <ui:GetRobotAsset AssetName="emailServer" CacheStrategy="None" DisplayName="Get Asset emailServer" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+    <ui:GetRobotAsset AssetName="emailServer" CacheStrategy="None" DisplayName="Get Asset emailServer" sap:VirtualizedContainerService.HintSize="548,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
       <ui:GetRobotAsset.TimeoutMS>
         <InArgument x:TypeArguments="x:Int32" />
       </ui:GetRobotAsset.TimeoutMS>
@@ -114,12 +138,83 @@
         <OutArgument x:TypeArguments="x:String">[io_DefaultConfiguration("emailServer")]</OutArgument>
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
-    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="EBV Transactional Portal" CacheStrategy="None" DisplayName="Get Asset" FolderPath="BVS/Dev" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="EBV Transactional Portal" CacheStrategy="None" DisplayName="Get Asset" FolderPath="BVS/Dev" sap:VirtualizedContainerService.HintSize="548,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
       <ui:GetRobotAsset.Value>
         <OutArgument x:TypeArguments="x:String">[io_DefaultConfiguration("portalUrl")]</OutArgument>
       </ui:GetRobotAsset.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotAsset>
-    <If Condition="[Boolean.Parse(io_DefaultConfiguration(&quot;isAPI&quot;).ToString.Trim)]" DisplayName="API?" sap:VirtualizedContainerService.HintSize="388,566" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="RPA0034_bucketName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="BVS/Dev" sap:VirtualizedContainerService.HintSize="548,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_4">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[io_DefaultConfiguration("bucketName")]</OutArgument>
+      </ui:GetRobotAsset.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:GetRobotAsset>
+    <Sequence DisplayName="Get GCP data" sap:VirtualizedContainerService.HintSize="548,1103" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="FolderExists" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:FolderExistsX DisplayName="Folder Exists" Exists="[FolderExists]" sap:VirtualizedContainerService.HintSize="486,133" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[System.Environment.SystemDirectory]" />
+      <uga:GCPScope ServiceAccountKey="{x:Null}" ServiceAccountKeyFromFile="{x:Null}" DisplayName="Google Cloud Scope" sap:VirtualizedContainerService.HintSize="486,819" sap2010:WorkflowViewState.IdRef="GCPScope_1" ScopeType="AutoDetect">
+        <uga:GCPScope.Body>
+          <ActivityAction x:TypeArguments="ugc:GCPCmd">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ugc:GCPCmd" Name="GoogleCloudScopePropertyTag" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,582" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="ugm:GCPBucket" Name="objBucket" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uga:GCPGetBucket ConnectionClient="{x:Null}" ConnectionId="{x:Null}" Bucket="[objBucket]" BucketName="[io_DefaultConfiguration(&quot;bucketName&quot;).ToString]" DisplayName="Get Bucket" sap:VirtualizedContainerService.HintSize="410,90" sap2010:WorkflowViewState.IdRef="GCPGetBucket_1" InsideScope="True" UseConnectionService="True" />
+              <uga:GCPForEachObjectInBucket ConnectionClient="{x:Null}" ConnectionId="{x:Null}" Index="{x:Null}" Prefix="{x:Null}" Result="{x:Null}" Bucket="[objBucket]" DisplayName="For Each Object in Bucket" sap:VirtualizedContainerService.HintSize="410,364" sap2010:WorkflowViewState.IdRef="GCPForEachObjectInBucket_1" InsideScope="True" LimitToFirst="100" UseConnectionService="True">
+                <uga:GCPForEachObjectInBucket.Body>
+                  <ActivityAction x:TypeArguments="ugm:GCPObject">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ugm:GCPObject" Name="GCPObject" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,178" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uga:GCPDownloadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" File="{x:Null}" FileName="{x:Null}" FilePath="{x:Null}" Folder="{x:Null}" Generation="{x:Null}" Timeout="{x:Null}" DisplayName="Download Object to File" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="GCPDownloadObject_1" InsideScope="True" Object="[GCPObject]" Overwrite="False" UseConnectionService="True" />
+                    </Sequence>
+                  </ActivityAction>
+                </uga:GCPForEachObjectInBucket.Body>
+              </uga:GCPForEachObjectInBucket>
+            </Sequence>
+          </ActivityAction>
+        </uga:GCPScope.Body>
+      </uga:GCPScope>
+    </Sequence>
+    <If Condition="[Boolean.Parse(io_DefaultConfiguration(&quot;isAPI&quot;).ToString.Trim)]" DisplayName="API?" sap:VirtualizedContainerService.HintSize="548,52" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <If.Then>
         <c:Create_Connenection_String_API DisplayName="Create DB Connection String API" sap:VirtualizedContainerService.HintSize="334,192" sap2010:WorkflowViewState.IdRef="Create_Connenection_String_API_1" in_ApiDbCredAssetName="[io_DefaultConfiguration(&quot;credentialApiOrchDBConnection&quot;).ToString.Trim]" in_ApiDbEndPointAssetName="[io_DefaultConfiguration(&quot;endpointOrchDBConnection&quot;).ToString.Trim]" out_ConnectionString="[io_DefaultConfiguration(&quot;connectionStringDB&quot;)]" />
       </If.Then>

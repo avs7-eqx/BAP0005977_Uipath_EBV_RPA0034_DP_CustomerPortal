@@ -324,15 +324,14 @@
       "VariablesSectionElementsOrder": [
         "dt_UploadData&Sequence_1",
         "dt_UploadResults&Sequence_1",
-        "BatchPriority&Sequence_2",
         "InputID&Sequence_2",
         "BatID&Sequence_2",
         "Reference&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_dt_ResultsDataTable",
         "in_QueueName",
-        "in_BatchPriority",
-        "in_ResultsDataTable"
+        "in_BatchPriority"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

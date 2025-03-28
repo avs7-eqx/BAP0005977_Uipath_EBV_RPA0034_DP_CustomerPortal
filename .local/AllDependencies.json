@@ -206,6 +206,29 @@
           }
         }
       },
+      "GCP_Bucket_Options/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "UiPath.GoogleCloud.Activities": "2.4.1",
+          "UiPath.System.Activities": "23.10.5",
+          "UiPath.Testing.Activities": "23.10.1",
+          "UiPath.UIAutomation.Activities": "23.10.7"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/GCP_Bucket_Options.dll": {},
+          "lib/net6.0-windows7.0/GCP_Bucket_Options_Expressions_56799051.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Google.Api.CommonProtos/2.5.0": {
         "type": "package",
         "dependencies": {
@@ -6639,6 +6662,29 @@
           }
         }
       },
+      "GCP_Bucket_Options/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "UiPath.GoogleCloud.Activities": "2.4.1",
+          "UiPath.System.Activities": "23.10.5",
+          "UiPath.Testing.Activities": "23.10.1",
+          "UiPath.UIAutomation.Activities": "23.10.7"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/GCP_Bucket_Options.dll": {},
+          "lib/net6.0-windows7.0/GCP_Bucket_Options_Expressions_56799051.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Google.Api.CommonProtos/2.5.0": {
         "type": "package",
         "dependencies": {
@@ -12986,6 +13032,36 @@
         "lib/netstandard1.0/ExcelNumberFormat.xml",
         "lib/netstandard2.0/ExcelNumberFormat.dll",
         "lib/netstandard2.0/ExcelNumberFormat.xml"
+      ]
+    },
+    "GCP_Bucket_Options/1.0.1": {
+      "sha512": "IBQ5a958uM2N2HSUldPvLMqywiR1HwUuyoY/SkMCsZ714uduuC+tWIgyJESS2t+r5DvQ5ntXBtK/jjh3tCDg4Q==",
+      "type": "package",
+      "path": "gcp_bucket_options/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        "content/.project/PackageBindingsMetadata.json",
+        "content/.project/design.json",
+        "content/.settings/Design/settings-5190454b.json",
+        "content/.settings/Design/settings-a1b2dac1.json",
+        "content/.settings/Design/settings-afad0842.json",
+        "content/.settings/Release/settings-1a5b880a.json",
+        "content/.settings/Release/settings-5190454b.json",
+        "content/.settings/Release/settings-590bb27b.json",
+        "content/.settings/Release/settings-82ca306a.json",
+        "content/.settings/Release/settings-9e9290da.json",
+        "content/.settings/Release/settings-a1b2dac1.json",
+        "content/.settings/Release/settings-afad0842.json",
+        "content/GCP_Bucket_Options.xaml",
+        "content/bindings.json",
+        "content/bindings_v2.json",
+        "content/project.json",
+        "contentFiles/any/any/.objects/.metadata",
+        "contentFiles/any/any/.objects/.type",
+        "gcp_bucket_options.1.0.1.nupkg.sha512",
+        "gcp_bucket_options.nuspec",
+        "lib/net6.0-windows7.0/GCP_Bucket_Options.dll",
+        "lib/net6.0-windows7.0/GCP_Bucket_Options_Expressions_56799051.dll"
       ]
     },
     "Google.Api.CommonProtos/2.5.0": {
@@ -24425,6 +24501,7 @@
     "": [],
     "net6.0-windows7.0": [
       "Connection.String.Builder.Core >= 1.0.5 <= 1.0.5",
+      "GCP_Bucket_Options >= 1.0.1 <= 1.0.1",
       "Logging.Standards.Library.Core >= 1.0.7 <= 1.0.7",
       "RPA.COE.Analytics.Core >= 1.1.13 <= 1.1.13",
       "UiPath.Database.Activities >= 1.9.0 <= 1.9.0",
@@ -24456,6 +24533,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[1.0.5, 1.0.5]"
+          },
+          "GCP_Bucket_Options": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.1, 1.0.1]"
           },
           "Logging.Standards.Library.Core": {
             "include": "Runtime",

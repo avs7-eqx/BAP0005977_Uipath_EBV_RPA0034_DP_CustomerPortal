@@ -5,6 +5,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "Connection.String.Builder.Core": "[1.0.5]",
+    "GCP_Bucket_Options": "[1.0.1]",
     "Logging.Standards.Library.Core": "[1.0.7]",
     "RPA.COE.Analytics.Core": "[1.1.13]",
     "UiPath.Database.Activities": "[1.9.0]",
